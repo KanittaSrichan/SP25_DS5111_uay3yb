@@ -50,7 +50,7 @@ This repository is organized to make it easy to set up a new project environment
      ```
      (This target should produce output saved to `sample_data/ygainers.csv`.)
 
-Following these steps will ensure that the repository is well-organized and that the setup instructions are clear. This will make it easy for anyone, including you in the future or a new team member, to bootstrap a new VM and get the project up and running quickly.
+Following these steps will ensure that the repository is well-organized and that the setup instructions are clear. This will make it easy for anyone, including me in the future or a new team member, to bootstrap a new VM and get the project up and running quickly.
 
 ---
 
