@@ -20,4 +20,3 @@ wsjgainers.html:
 
 wjsgainers.csv: wjsgainers.html
 	. env/bin/activate; python3 -c "import pandas as pd; raw = pd.read_html('wjsgainers.html'); raw[0].to_csv('wjsgainers.csv')"
-
