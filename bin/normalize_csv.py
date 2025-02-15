@@ -1,32 +1,58 @@
-import pandas as pd
 import sys
+import pandas as pd
 
-def normalize_csv(input_file):
+def normalize_wsj_data(df):
+    assert isinstance(df, pd.DataFrame), "Input must be a pandas DataFrame"
+    df['symbol'] = df['Unnamed: 0'].str.extract(r'\((.*?)\)')
+    df['price'] = df['Last']
+    df['price_change'] = df['Chg']
+    df['price_percent_change'] = df['% Chg']
+    normalized_df = df[['symbol', 'price', 'price_change', 'price_percent_change']]
+    assert not normalized_df.isnull().values.any(), "Null values found in WSJ normalized data"
+    return normalized_df
+
+def normalize_yahoo_data(df):
+    assert isinstance(df, pd.DataFrame), "Input must be a pandas DataFrame"
+    df['symbol'] = df['Symbol']
+    df['price'] = df['Price'].str.extract(r'^(\d+\.\d+)').astype(float)
+    df['price_change'] = df['Change']
+    df['price_percent_change'] = df['Change %'].str.strip('+%')
+    normalized_df = df[['symbol', 'price', 'price_change', 'price_percent_change']]
+    assert not normalized_df.isnull().values.any(), "Null values found in Yahoo normalized data"
+    return normalized_df
+
+def determine_source(filename):
+    # This can be adjusted based on file naming conventions or file content
+    if 'wsj' in filename.lower():
+        return 'wsj'
+    elif 'ygainers' in filename.lower():
+        return 'yahoo'
+    else:
+        raise ValueError("Unknown file source, please check the filename")
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python bin/normalize_csv.py <path to raw csv>")
+        sys.exit(1)
+
+    csv_path = sys.argv[1]
     try:
-        df = pd.read_csv(input_file)
+        source = determine_source(csv_path)
+        data = pd.read_csv(csv_path)
+        if source == 'wsj':
+            normalized_data = normalize_wsj_data(data)
+        elif source == 'yahoo':
+            normalized_data = normalize_yahoo_data(data)
+        else:
+            raise ValueError("Source determination failed")
 
-        # Normalize column names to lowercase
-        df.columns = [col.strip().lower() for col in df.columns]
+        output_path = csv_path.replace('.csv', '_norm.csv')
+        normalized_data.to_csv(output_path, index=False)
+        print(f"File saved: {output_path}")
 
-        # Check for necessary columns and adjust if necessary
-        expected_columns = ['symbol', 'price', 'change', 'change %']
-        missing_columns = set(expected_columns) - set(df.columns)
-        if missing_columns:
-            raise ValueError(f"Missing columns: {missing_columns}")
-
-        # Select and rename only the necessary columns
-        df = df[['symbol', 'price', 'change', 'change %']]
-        df.rename(columns={'change': 'price_change', 'change %': 'price_percent_change'}, inplace=True)
-
-        # Save the normalized file
-        output_file = input_file.replace('.csv', '_norm.csv')
-        df.to_csv(output_file, index=False)
-        print(f"Normalized file saved as: {output_file}")
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python normalize_csv.py <path to CSV file>")
-        sys.exit(1)
-    normalize_csv(sys.argv[1])
+    main()
+
