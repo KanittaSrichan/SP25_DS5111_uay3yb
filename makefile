@@ -23,3 +23,8 @@ wsjgainers.csv: wsjgainers.html
 
 lint:
 	pylint bin/sample_code.py
+	pytest -vvx tests
+
+test: lint
+
+	pytest -vvx tests
