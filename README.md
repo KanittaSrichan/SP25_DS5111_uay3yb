@@ -60,4 +60,6 @@ git commit -m "Organize repository: add scripts/ and sample_data/ directories, u
 git push
 
 
+
+### Actions
 [![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
