@@ -12,7 +12,7 @@ This repository is organized to make it easy to set up a new project environment
 
 You can track the status of your tests with the badge below:
 
-[![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
+[![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations2.yml)
 
 ## Setting Up the Environment
 
