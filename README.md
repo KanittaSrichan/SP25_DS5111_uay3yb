@@ -4,6 +4,8 @@
 
 Welcome to our data science project setup guide. This repository provides scripts and instructions to automate the setup of a Virtual Machine (VM) for data science tasks, focusing on creating a reproducible environment that facilitates data collection using a headless Chrome browser and analysis using Python.
 
+[![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
+
 ## Learning Objectives
 
 - Automate VM setup to ensure quick and reproducible deployment.
@@ -12,8 +14,14 @@ Welcome to our data science project setup guide. This repository provides script
 
 ## Repository Structure
 
-/ |-- README.md |-- init.sh |-- Makefile |-- requirements.txt |-- scripts/ | |-- install_chrome.sh |-- sample_data/ | |-- ygainers.csv
-
+/ |-- README.md  
+|-- init.sh  
+|-- Makefile  
+|-- requirements.txt  
+|-- scripts/  
+| |-- install_chrome.sh  
+|-- sample_data/  
+| |-- ygainers.csv
 
 ## Setup Instructions
 
@@ -73,13 +81,12 @@ To contribute to this repository, fork the project, make your changes, and submi
 
 ## FAQs
 
-**Q: What if the `make update` command fails?**
+**Q: What if the `make update` command fails?**  
 **A:** Check that Python and `make` are installed correctly, and review `requirements.txt` for any incompatible package versions.
 
-**Q: How do I update scripts for a new OS version?**
+**Q: How do I update scripts for a new OS version?**  
 **A:** Update the package installation commands in the `init.sh` script according to new OS requirements and test thoroughly.
 
 ## Contact
 
 For further assistance or inquiries, please contact uay3yb@virginia.edu
-
