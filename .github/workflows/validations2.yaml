@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: |
           make update
+      - name: Pylint check
+        run: |
+          make lint
       - name: Test with pytest
         run: |
           make test
