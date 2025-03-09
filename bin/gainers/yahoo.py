@@ -1,22 +1,16 @@
-# bin/gainers/yahoo.py
 from .base import GainerDownload, GainerProcess
-import requests
 
 class GainerDownloadYahoo(GainerDownload):
-    def __init__(self, url="https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200"):
+    def __init__(self, url):
         super().__init__(url)
 
     def download(self):
-        print(f"Downloading Yahoo gainers from {self.url}")
-        try:
-            response = requests.get(self.url)
-            response.raise_for_status()
-            return response.text
-        except requests.RequestException as e:
-            print(f"Failed to download Yahoo data: {e}")
-
+        print("Downloading Yahoo gainers")
 
 class GainerProcessYahoo(GainerProcess):
+    def __init__(self):
+        pass
+
     def normalize(self):
         print("Normalizing Yahoo gainers")
 

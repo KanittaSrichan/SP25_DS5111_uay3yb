@@ -28,3 +28,14 @@ lint:
 test: lint
 
 	pytest -vvx tests
+
+gainers:
+	@echo "Processing gainers from $(SRC)"
+	if [ "$(SRC)" = "yahoo" ]; then \
+            python get_gainer.py yahoo "https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200"; \
+	elif [ "$(SRC)" = "wsj" ]; then \
+            python get_gainer.py wsj "https://www.wsj.com/market-data/stocks/us/movers"; \
+	else \
+            echo "Error: Unsupported SRC value. Use 'yahoo' or 'wsj'."; \
+            exit 1; \
+	fi
