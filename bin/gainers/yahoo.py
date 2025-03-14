@@ -1,18 +1,38 @@
-# bin/gainers/yahoo.py
-
 import pandas as pd
+import subprocess
 from .base import GainerDownload, GainerProcess
 
 class GainerDownloadYahoo(GainerDownload):
     def __init__(self):
         super().__init__()
 
-    def download(self, csv_path):
-        print("Reading Yahoo CSV data from:", csv_path)
+    def download(self, input_source=None):
+        # Use the command from the Makefile to fetch Yahoo HTML data.
+        cmd = ("google-chrome-stable --headless --disable-gpu --dump-dom "
+               "--no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'")
+        print("Running command:", cmd)
         try:
-            df = pd.read_csv(csv_path)
+            result = subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True)
+        except subprocess.CalledProcessError as e:
+            raise ValueError("Error running chrome command: " + str(e))
+        
+        html = result.stdout
+        # Save the fetched HTML to a file for debugging purposes.
+        with open("ygainers.html", "w", encoding="utf-8") as f:
+            f.write(html)
+        print("Yahoo HTML saved to ygainers.html")
+        
+        # Extract the table using pandas
+        try:
+            df_list = pd.read_html(html)
+            if len(df_list) > 0:
+                df = df_list[0]
+                print("Table successfully extracted from Yahoo HTML.")
+            else:
+                raise ValueError("No tables found in Yahoo HTML.")
         except Exception as e:
-            raise ValueError(f"Error reading CSV file: {e}")
+            raise ValueError("Error extracting table using pd.read_html: " + str(e))
+        
         return df
 
 class GainerProcessYahoo(GainerProcess):
@@ -20,21 +40,13 @@ class GainerProcessYahoo(GainerProcess):
         super().__init__()
 
     def normalize(self, df):
-        # Ensure the input is a DataFrame
+        # Ensure the input is a DataFrame and drop rows missing critical columns.
         assert isinstance(df, pd.DataFrame), "Input must be a pandas DataFrame"
         df = df.copy()
-        # Drop rows missing any critical columns
         df = df.dropna(subset=['Symbol', 'Price', 'Change', 'Change %'])
-        # Normalize based on Yahoo's format
         df['symbol'] = df['Symbol']
-        # Extract the price using split, remove commas, and convert to float
-        df['price'] = (
-            df['Price']
-            .str.strip()
-            .str.split()
-            .str[0]
-            .str.replace(',', '', regex=False)
-        )
+        # Extract the numeric price: take the first token from the Price string and remove commas.
+        df['price'] = df['Price'].str.strip().str.split().str[0].str.replace(',', '', regex=False)
         try:
             df['price'] = df['price'].astype(float)
         except Exception as e:
@@ -42,7 +54,6 @@ class GainerProcessYahoo(GainerProcess):
         df['price_change'] = df['Change']
         df['price_percent_change'] = df['Change %'].str.strip('+%')
         normalized_df = df[['symbol', 'price', 'price_change', 'price_percent_change']]
-        # Ensure no null values remain
         assert not normalized_df.isnull().values.any(), "Null values found in Yahoo normalized data"
         return normalized_df
 
