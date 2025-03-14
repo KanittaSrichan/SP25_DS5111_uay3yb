@@ -1,5 +1,3 @@
-# bin/gainers/factory.py
-
 from .yahoo import GainerDownloadYahoo, GainerProcessYahoo
 from .wsj import GainerDownloadWSJ, GainerProcessWSJ
 
@@ -13,15 +11,13 @@ class GainerFactory:
     def get_downloader(self):
         if self.choice == 'yahoo':
             return GainerDownloadYahoo()
-        elif self.choice == 'wsj':
+        if self.choice == 'wsj':
             return GainerDownloadWSJ()
-        else:
-            raise ValueError("No downloader available for the provided type.")
+        raise ValueError("No downloader available for the provided type.")
 
     def get_processor(self):
         if self.choice == 'yahoo':
             return GainerProcessYahoo()
-        elif self.choice == 'wsj':
+        if self.choice == 'wsj':
             return GainerProcessWSJ()
-        else:
-            raise ValueError("No processor available for the provided type.")
+        raise ValueError("No processor available for the provided type.")

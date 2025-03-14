@@ -12,7 +12,7 @@ class GainerDownload(ABC):
         """
         Reads the raw CSV file and returns a pandas DataFrame.
         """
-        pass
+        raise NotImplementedError
 
 # Abstract class for processing (normalizing & saving) the data
 class GainerProcess(ABC):
@@ -24,11 +24,11 @@ class GainerProcess(ABC):
         """
         Normalizes the input DataFrame and returns a new DataFrame.
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def save_with_timestamp(self, df, output_path):
         """
         Saves the normalized DataFrame to the given output path.
         """
-        pass
+        raise NotImplementedError
