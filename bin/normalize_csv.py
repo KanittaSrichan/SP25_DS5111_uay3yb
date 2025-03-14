@@ -13,13 +13,31 @@ def normalize_wsj_data(df):
 
 def normalize_yahoo_data(df):
     assert isinstance(df, pd.DataFrame), "Input must be a pandas DataFrame"
+    
+    # Rename columns if necessary to match expected names
+    if 'Price (Intraday)' in df.columns:
+        df = df.rename(columns={'Price (Intraday)': 'Price'})
+    if '% Change' in df.columns:
+        df = df.rename(columns={'% Change': 'Change %'})
+    
+    # Check that required columns exist now
+    required_columns = ['Symbol', 'Price', 'Change', 'Change %']
+    for col in required_columns:
+        if col not in df.columns:
+            raise ValueError(f"Expected column '{col}' not found in the data")
+    
     df['symbol'] = df['Symbol']
-    df['price'] = df['Price'].str.extract(r'^(\d+\.\d+)').astype(float)
+    # Extract a numeric price from the Price column; adjust regex if needed
+    df['price'] = df['Price'].str.extract(r'^(\d+\.\d+)')[0].astype(float)
     df['price_change'] = df['Change']
+    # Remove any extra characters from the percentage change
     df['price_percent_change'] = df['Change %'].str.strip('+%')
+    
     normalized_df = df[['symbol', 'price', 'price_change', 'price_percent_change']]
     assert not normalized_df.isnull().values.any(), "Null values found in Yahoo normalized data"
     return normalized_df
+
+
 
 def determine_source(filename):
     # This can be adjusted based on file naming conventions or file content

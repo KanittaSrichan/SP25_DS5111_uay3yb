@@ -1,29 +1,27 @@
-from bin.gainers.base import GainerDownloadYahoo, GainerDownloadWSJ, GainerProcessYahoo, GainerProcessWSJ
+# bin/gainers/factory.py
+
+from .yahoo import GainerDownloadYahoo, GainerProcessYahoo
+from .wsj import GainerDownloadWSJ, GainerProcessWSJ
 
 class GainerFactory:
-    def __init__(self, choice, url):
-        """
-        Initialize the factory with a gainer choice ('yahoo' or 'wsj') and a URL.
-        The URL is used by the downloader for data retrieval.
-        """
-        assert choice in ['yahoo', 'wsj'], f"Unrecognized gainer type {choice}"
+    def __init__(self, choice):
+        valid_choices = ['yahoo', 'wsj', 'test']
+        if choice not in valid_choices:
+            raise ValueError(f"Unrecognized gainer type: {choice}")
         self.choice = choice
-        self.url = url  # Accept the URL as part of the initialization
 
     def get_downloader(self):
-        """
-        Returns the appropriate downloader based on the chosen source.
-        """
         if self.choice == 'yahoo':
-            return GainerDownloadYahoo(self.url)  # Pass URL to the Yahoo downloader
+            return GainerDownloadYahoo()
         elif self.choice == 'wsj':
-            return GainerDownloadWSJ(self.url)  # Pass URL to the WSJ downloader
+            return GainerDownloadWSJ()
+        else:
+            raise ValueError("No downloader available for the provided type.")
 
     def get_processor(self):
-        """
-        Returns the appropriate processor based on the chosen source.
-        """
         if self.choice == 'yahoo':
             return GainerProcessYahoo()
         elif self.choice == 'wsj':
             return GainerProcessWSJ()
+        else:
+            raise ValueError("No processor available for the provided type.")
