@@ -4,7 +4,9 @@ import pandas as pd
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service  # Import Service
 from webdriver_manager.chrome import ChromeDriverManager
+import tempfile  # Import tempfile for temporary user data directory
 
 # Function to initialize ChromeDriver with proper options
 def get_chrome_driver():
@@ -13,12 +15,13 @@ def get_chrome_driver():
     options.add_argument("--disable-gpu")  # Disable GPU acceleration (recommended for headless mode)
     options.add_argument("--no-sandbox")  # Disable sandboxing (required for certain environments)
 
-    # Add a unique user data directory for Chrome
-    user_data_dir = "/tmp/chrome_user_data"  # Temporary directory to store Chrome's user data
+    # Create a temporary user data directory each time
+    user_data_dir = tempfile.mkdtemp()  # Create a new unique temp directory each time
     options.add_argument(f"--user-data-dir={user_data_dir}")
 
-    # Ensure ChromeDriver is automatically downloaded and used
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    # Create a Service object and initialize ChromeDriver with it
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
     return driver
 
 # Create the Chrome driver instance

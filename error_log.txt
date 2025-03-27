@@ -302,3 +302,5 @@ Stacktrace:
 #23 0x74c033e9caa4 <unknown>
 #24 0x74c033f29c3c <unknown>
 
+2025-03-27 00:37:05.033144 - An error occurred with wsj: HTTPConnectionPool(host='localhost', port=51855): Read timed out. (read timeout=120)
+2025-03-27 00:37:05.644720 - An error occurred with wsj: HTTPConnectionPool(host='localhost', port=52665): Read timed out. (read timeout=120)
