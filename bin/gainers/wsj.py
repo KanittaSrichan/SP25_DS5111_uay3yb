@@ -16,14 +16,13 @@ from .base import (
 def get_chrome_driver():
     options = Options()
     options.add_argument("--headless")  # Run Chrome in headless mode (no GUI)
-    options.add_argument("--disable-gpu")  # Disable GPU acceleration (recommended for headless mode)
+    # Disable GPU acceleration (recommended for headless mode)
+    options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")  # Disable sandboxing (required for certain environments)
 
     # Create a temporary user data directory each time
     user_data_dir = tempfile.mkdtemp()  # Create a new unique temp directory each time
-    options.add_argument(
-        f"--user-data-dir={user_data_dir}"
-    )
+    options.add_argument(f"--user-data-dir={user_data_dir}")
 
     # Create a Service object and initialize ChromeDriver with it
     service = Service(ChromeDriverManager().install())
