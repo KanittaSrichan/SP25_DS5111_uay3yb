@@ -17,7 +17,9 @@ def get_chrome_driver():
 
     # Create a temporary user data directory each time
     user_data_dir = tempfile.mkdtemp()  # Create a new unique temp directory each time
-    options.add_argument(f"--user-data-dir={user_data_dir}")
+    options.add_argument(
+        f"--user-data-dir={user_data_dir}"  # Break the line here to stay within the 100-char limit
+    )
 
     # Create a Service object and initialize ChromeDriver with it
     service = Service(ChromeDriverManager().install())
