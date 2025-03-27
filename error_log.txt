@@ -304,3 +304,4 @@ Stacktrace:
 
 2025-03-27 00:37:05.033144 - An error occurred with wsj: HTTPConnectionPool(host='localhost', port=51855): Read timed out. (read timeout=120)
 2025-03-27 00:37:05.644720 - An error occurred with wsj: HTTPConnectionPool(host='localhost', port=52665): Read timed out. (read timeout=120)
+2025-03-27 02:01:34.736789 - An error occurred with wsj: GainerProcessWSJ.save_with_timestamp() missing 1 required positional argument: 'raw_file_dir'
