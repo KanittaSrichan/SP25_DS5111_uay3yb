@@ -89,7 +89,8 @@ class GainerProcessWSJ(GainerProcess):
         df["price_change"] = df["Chg"]
         df["price_percent_change"] = df["% Chg"]
         normalized_df = df[["symbol", "price", "price_change", "price_percent_change"]]
-        assert not normalized_df.isnull().values.any(), "Null values found in WSJ normalized data"
+        assert not normalized_df.isnull().values.any(), \
+		"Null values found in WSJ normalized data"
         return normalized_df
 
     def save_with_timestamp(self, df, output_path):
