@@ -31,3 +31,4 @@ webencodings==0.5.1
 selenium==4.8.0
 dbt-core
 dbt-snowflake
+webdriver-manager
