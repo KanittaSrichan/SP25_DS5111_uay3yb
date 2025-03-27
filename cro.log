@@ -1,0 +1,41 @@
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_15-19.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 132.0.6834.159 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5f0fc8eee133 <unknown>
+#1 0x5f0fc8c22966 <unknown>
+#2 0x5f0fc8c505ec <unknown>
+#3 0x5f0fc8c4b8da <unknown>
+#4 0x5f0fc8c4807b <unknown>
+#5 0x5f0fc8c879ad <unknown>
+#6 0x5f0fc8c8718f <unknown>
+#7 0x5f0fc8c7e9a3 <unknown>
+#8 0x5f0fc8c5346a <unknown>
+#9 0x5f0fc8c5455e <unknown>
+#10 0x5f0fc8eadcae <unknown>
+#11 0x5f0fc8eb18fe <unknown>
+#12 0x5f0fc8ebaf20 <unknown>
+#13 0x5f0fc8eb2923 <unknown>
+#14 0x5f0fc8e85c0e <unknown>
+#15 0x5f0fc8ed5b08 <unknown>
+#16 0x5f0fc8ed5c97 <unknown>
+#17 0x5f0fc8ee6113 <unknown>
+#18 0x747ae989caa4 <unknown>
+#19 0x747ae9929c3c <unknown>
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-07.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-07.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-07.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-07.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-07.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-07.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-07.csv

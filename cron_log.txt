@@ -305,3 +305,919 @@ WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_00-19.csv
  Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_00-19.csv
 WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_00-19.csv
  Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_00-19.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_09-31.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-26_09-31.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-26_09-31.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-26_09-31.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-26_09-31.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-26_09-31.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-26_09-31.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_12-30.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-26_12-30.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-26_12-30.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-26_12-30.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-26_12-30.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-26_12-30.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-26_12-30.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-26_16-01.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-26_16-01.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-26_16-01.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-26_16-01.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-26_16-01.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-26_16-01.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-17.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-17.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-17.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-17.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-17.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-17.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-17.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-18.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-18.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-18.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-18.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-18.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-18.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-18.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-19.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-19.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-19.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-19.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-19.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-19.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-19.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-20.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-20.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-20.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-20.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-20.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-20.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-20.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-21.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-21.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-21.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-21.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-21.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-21.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-21.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-22.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-22.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-22.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-22.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-22.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-22.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-22.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-23.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-23.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-23.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-23.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-23.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-23.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-23.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-24.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-24.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-24.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-24.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-24.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-24.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-24.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-25.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-25.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-25.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-25.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-25.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-25.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-25.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-26.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-26.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-26.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-26.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-26.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-26.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-26.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-27.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-27.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-27.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-27.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-27.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-27.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-27.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-28.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-28.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-28.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-28.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-28.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-28.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-28.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-29.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-29.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-29.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-29.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-29.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-29.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-29.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-30.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-30.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-30.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-30.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-30.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-30.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-30.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-31.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-31.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-31.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-31.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-31.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-31.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-31.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-32.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-32.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-32.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-32.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-32.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-32.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-32.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-33.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-33.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-33.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-33.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-33.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-33.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-33.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-34.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-34.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-34.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-34.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-34.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-34.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-34.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-35.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-35.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-35.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-35.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-35.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-35.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-35.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-36.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-36.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-36.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-36.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-36.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-36.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-36.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-37.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-37.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-37.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-37.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-37.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-37.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-37.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-38.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-38.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-38.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-38.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-38.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-38.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-38.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-39.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-39.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-39.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-39.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-39.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-39.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-39.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-40.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-40.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-40.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-40.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-40.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-40.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-40.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-41.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-41.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-41.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-41.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-41.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-41.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-41.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_16-42.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_16-42.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_16-42.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_16-42.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_16-42.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_16-42.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_16-42.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_18-34.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_18-34.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_18-34.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_18-34.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_18-34.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_18-34.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_18-34.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_18-35.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_18-35.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_18-35.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_18-35.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_18-35.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_18-35.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_18-35.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_18-36.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_18-36.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_18-36.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_18-36.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_18-36.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_18-36.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_18-36.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-34.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-34.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-34.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-34.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-34.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-34.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-34.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-35.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-35.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-35.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-35.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-35.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-35.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-35.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-36.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-36.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-36.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-36.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-36.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-36.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-36.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-37.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-37.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-37.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-37.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-37.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-37.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-37.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-38.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-38.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-38.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-38.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-38.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-38.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-38.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-39.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-39.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-39.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-39.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-39.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-39.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-39.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-40.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-40.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-40.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-40.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-40.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-40.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-40.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-41.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-41.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-41.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-41.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-41.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-41.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-41.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-42.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-42.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-42.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-42.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-42.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-42.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-42.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-43.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-43.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-43.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-43.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-43.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-43.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-43.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-44.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-44.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-44.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-44.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-44.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-44.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-44.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-45.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-45.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-45.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-45.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-45.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-45.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-45.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-46.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-46.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-46.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-46.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-46.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-46.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-46.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-47.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-47.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-47.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-47.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-47.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-47.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-47.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/wsj.py:54: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-26_21-48.csv
+Using Selenium to fetch WSJ data...
+WSJ HTML fetched and saved to wsjgainers.html
+Table successfully extracted from WSJ HTML.
+ Normalizing wsj data...
+ Saving raw data to raw_data/wsj/gainers_raw_2025-03-26_21-48.csv
+WSJ data saved to raw_data/wsj/gainers_raw_2025-03-26_21-48.csv
+ Saved raw data: raw_data/wsj/gainers_raw_2025-03-26_21-48.csv
+ Saving normalized data to raw_data/wsj/gainers_normalized_2025-03-26_21-48.csv
+WSJ data saved to raw_data/wsj/gainers_normalized_2025-03-26_21-48.csv
+ Saved normalized data: raw_data/wsj/gainers_normalized_2025-03-26_21-48.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-15.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-15.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-15.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-15.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-15.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-15.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-27_00-15.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5e82be4b653a <unknown>
+#1 0x5e82bdfb1f00 <unknown>
+#2 0x5e82bdf9a1b7 <unknown>
+#3 0x5e82bdf99ec2 <unknown>
+#4 0x5e82bdf97e56 <unknown>
+#5 0x5e82bdf9863f <unknown>
+#6 0x5e82bdfa8410 <unknown>
+#7 0x5e82bdfbf194 <unknown>
+#8 0x5e82bdfc509b <unknown>
+#9 0x5e82bdf98d47 <unknown>
+#10 0x5e82bdfbecf1 <unknown>
+#11 0x5e82be045338 <unknown>
+#12 0x5e82be026343 <unknown>
+#13 0x5e82bdff378a <unknown>
+#14 0x5e82bdff49de <unknown>
+#15 0x5e82be4802cb <unknown>
+#16 0x5e82be484242 <unknown>
+#17 0x5e82be46d7ac <unknown>
+#18 0x5e82be484df7 <unknown>
+#19 0x5e82be451b2f <unknown>
+#20 0x5e82be4a51a8 <unknown>
+#21 0x5e82be4a5370 <unknown>
+#22 0x5e82be4b53b6 <unknown>
+#23 0x75b2a809caa4 <unknown>
+#24 0x75b2a8129c3c <unknown>
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-16.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-16.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-16.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-16.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-16.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-16.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-27_00-16.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5c92a17d653a <unknown>
+#1 0x5c92a12d1f00 <unknown>
+#2 0x5c92a12b8bc5 <unknown>
+#3 0x5c92a12b8aa3 <unknown>
+#4 0x5c92a12d4272 <unknown>
+#5 0x5c92a136496f <unknown>
+#6 0x5c92a1346343 <unknown>
+#7 0x5c92a131378a <unknown>
+#8 0x5c92a13149de <unknown>
+#9 0x5c92a17a02cb <unknown>
+#10 0x5c92a17a4242 <unknown>
+#11 0x5c92a178d7ac <unknown>
+#12 0x5c92a17a4df7 <unknown>
+#13 0x5c92a1771b2f <unknown>
+#14 0x5c92a17c51a8 <unknown>
+#15 0x5c92a17c5370 <unknown>
+#16 0x5c92a17d53b6 <unknown>
+#17 0x74456de9caa4 <unknown>
+#18 0x74456df29c3c <unknown>
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-17.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-17.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-17.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-17.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-17.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-17.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-27_00-17.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x57453a04453a <unknown>
+#1 0x574539b3ff00 <unknown>
+#2 0x574539b15b6f <unknown>
+#3 0x574539bbc95d <unknown>
+#4 0x574539bd2945 <unknown>
+#5 0x574539bb4343 <unknown>
+#6 0x574539b8178a <unknown>
+#7 0x574539b829de <unknown>
+#8 0x57453a00e2cb <unknown>
+#9 0x57453a012242 <unknown>
+#10 0x574539ffb7ac <unknown>
+#11 0x57453a012df7 <unknown>
+#12 0x574539fdfb2f <unknown>
+#13 0x57453a0331a8 <unknown>
+#14 0x57453a033370 <unknown>
+#15 0x57453a0433b6 <unknown>
+#16 0x7d1bf9e9caa4 <unknown>
+#17 0x7d1bf9f29c3c <unknown>
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+An error occurred with yahoo: Can only use .str accessor with string values!
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-27_00-18.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x60ee8662553a <unknown>
+#1 0x60ee86120f00 <unknown>
+#2 0x60ee86107bc5 <unknown>
+#3 0x60ee86107aa3 <unknown>
+#4 0x60ee86123272 <unknown>
+#5 0x60ee861b396f <unknown>
+#6 0x60ee86195343 <unknown>
+#7 0x60ee8616278a <unknown>
+#8 0x60ee861639de <unknown>
+#9 0x60ee865ef2cb <unknown>
+#10 0x60ee865f3242 <unknown>
+#11 0x60ee865dc7ac <unknown>
+#12 0x60ee865f3df7 <unknown>
+#13 0x60ee865c0b2f <unknown>
+#14 0x60ee866141a8 <unknown>
+#15 0x60ee86614370 <unknown>
+#16 0x60ee866243b6 <unknown>
+#17 0x75406469caa4 <unknown>
+#18 0x754064729c3c <unknown>
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-19.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-19.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-19.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-19.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-19.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-19.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-27_00-19.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x62f96ad5253a <unknown>
+#1 0x62f96a84df00 <unknown>
+#2 0x62f96a8361b7 <unknown>
+#3 0x62f96a835ec2 <unknown>
+#4 0x62f96a833e56 <unknown>
+#5 0x62f96a83463f <unknown>
+#6 0x62f96a8446b0 <unknown>
+#7 0x62f96a85b194 <unknown>
+#8 0x62f96a86109b <unknown>
+#9 0x62f96a834d47 <unknown>
+#10 0x62f96a85acf1 <unknown>
+#11 0x62f96a8e1338 <unknown>
+#12 0x62f96a8c2343 <unknown>
+#13 0x62f96a88f78a <unknown>
+#14 0x62f96a8909de <unknown>
+#15 0x62f96ad1c2cb <unknown>
+#16 0x62f96ad20242 <unknown>
+#17 0x62f96ad097ac <unknown>
+#18 0x62f96ad20df7 <unknown>
+#19 0x62f96acedb2f <unknown>
+#20 0x62f96ad411a8 <unknown>
+#21 0x62f96ad41370 <unknown>
+#22 0x62f96ad513b6 <unknown>
+#23 0x78798ca9caa4 <unknown>
+#24 0x78798cb29c3c <unknown>
+
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-20.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-20.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-20.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-20.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-20.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-20.csv
+ Downloading wsj data...
+File not found; treating csv_path as URL: raw_data/wsj/gainers_raw_2025-03-27_00-20.csv
+Using Selenium to fetch WSJ data...
+An error occurred with wsj: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5852fee0553a <unknown>
+#1 0x5852fe900d5d <unknown>
+#2 0x5852fe8e8e6f <unknown>
+#3 0x5852fe8e6e56 <unknown>
+#4 0x5852fe8e763f <unknown>
+#5 0x5852fe8f6f67 <unknown>
+#6 0x5852fe90e194 <unknown>
+#7 0x5852fe91409b <unknown>
+#8 0x5852fe8e7d47 <unknown>
+#9 0x5852fe90dcf1 <unknown>
+#10 0x5852fe994338 <unknown>
+#11 0x5852fe975343 <unknown>
+#12 0x5852fe94278a <unknown>
+#13 0x5852fe9439de <unknown>
+#14 0x5852fedcf2cb <unknown>
+#15 0x5852fedd3242 <unknown>
+#16 0x5852fedbc7ac <unknown>
+#17 0x5852fedd3df7 <unknown>
+#18 0x5852feda0b2f <unknown>
+#19 0x5852fedf41a8 <unknown>
+#20 0x5852fedf4370 <unknown>
+#21 0x5852fee043b6 <unknown>
+#22 0x72461389caa4 <unknown>
+#23 0x724613929c3c <unknown>
+

@@ -1,0 +1,26 @@
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-21.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-21.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-21.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-21.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-21.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-21.csv
+/home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df_list = pd.read_html(html)
+ Downloading yahoo data...
+Running command: google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200'
+Yahoo HTML saved to ygainers.html
+Table successfully extracted from Yahoo HTML.
+ Normalizing yahoo data...
+ Saving raw data to raw_data/yahoo/gainers_raw_2025-03-27_00-22.csv
+Yahoo data saved to raw_data/yahoo/gainers_raw_2025-03-27_00-22.csv
+ Saved raw data: raw_data/yahoo/gainers_raw_2025-03-27_00-22.csv
+ Saving normalized data to raw_data/yahoo/gainers_normalized_2025-03-27_00-22.csv
+Yahoo data saved to raw_data/yahoo/gainers_normalized_2025-03-27_00-22.csv
+ Saved normalized data: raw_data/yahoo/gainers_normalized_2025-03-27_00-22.csv

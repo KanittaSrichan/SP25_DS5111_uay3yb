@@ -3,9 +3,28 @@ import time
 import pandas as pd
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
+# Function to initialize ChromeDriver with proper options
+def get_chrome_driver():
+    options = Options()
+    options.add_argument("--headless")  # Run Chrome in headless mode (no GUI)
+    options.add_argument("--disable-gpu")  # Disable GPU acceleration (recommended for headless mode)
+    options.add_argument("--no-sandbox")  # Disable sandboxing (required for certain environments)
+
+    # Add a unique user data directory for Chrome
+    user_data_dir = "/tmp/chrome_user_data"  # Temporary directory to store Chrome's user data
+    options.add_argument(f"--user-data-dir={user_data_dir}")
+
+    # Ensure ChromeDriver is automatically downloaded and used
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    return driver
+
+# Create the Chrome driver instance
+driver = get_chrome_driver()
 
 from .base import GainerDownload, GainerProcess
-
 
 class GainerDownloadWSJ(GainerDownload):
     def download(self, csv_path):
@@ -23,11 +42,6 @@ class GainerDownloadWSJ(GainerDownload):
             print("File not found; treating csv_path as URL:", csv_path)
         if html is None or "table" not in html.lower():
             print("Using Selenium to fetch WSJ data...")
-            options = Options()
-            options.add_argument("--headless")
-            options.add_argument("--disable-gpu")
-            options.add_argument("--no-sandbox")
-            driver = Chrome(options=options)
             url = "https://www.wsj.com/market-data/stocks/us/movers"
             driver.get(url)
             time.sleep(10)  # Wait for dynamic content to load
