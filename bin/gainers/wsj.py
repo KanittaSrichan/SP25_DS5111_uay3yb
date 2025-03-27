@@ -39,7 +39,7 @@ class GainerDownloadWSJ(GainerDownload):
                 html = f.read()
         else:
             print("File not found; treating csv_path as URL:", csv_path)
-        
+
         if html is None or "table" not in html.lower():
             print("Using Selenium to fetch WSJ data...")
             url = "https://www.wsj.com/market-data/stocks/us/movers"
@@ -51,7 +51,7 @@ class GainerDownloadWSJ(GainerDownload):
             with open("wsjgainers.html", "w", encoding="utf-8") as f:
                 f.write(html)
             print("WSJ HTML fetched and saved to wsjgainers.html")
-        
+
         try:
             df_list = pd.read_html(html)
             if len(df_list) > 0:
@@ -68,12 +68,12 @@ class GainerDownloadWSJ(GainerDownload):
                 "% Chg": ["+1.00%", "-0.66%"]
             })
             print("Using dummy WSJ data for processing.")
-        
+
         # Delete the raw file after processing
         if os.path.exists("wsjgainers.html"):
             os.remove("wsjgainers.html")
             print("Raw file 'wsjgainers.html' has been deleted.")
-        
+
         return df
 
 
