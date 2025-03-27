@@ -23,7 +23,8 @@ def get_chrome_driver():
 
     # Create a Service object and initialize ChromeDriver with it
     service = Service(ChromeDriverManager().install())
-    driver_instance = webdriver.Chrome(service=service, options=options)  # Renamed variable to avoid conflict
+    driver_instance = webdriver.Chrome(
+	service=service, options=options)  # Renamed variable to avoid conflict
     return driver_instance
 
 
