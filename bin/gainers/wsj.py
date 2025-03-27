@@ -1,12 +1,12 @@
 import os
 import time
+import tempfile  # Standard library import
 import pandas as pd
-from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service  # Import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-import tempfile  # Import tempfile for temporary user data directory
+from .base import GainerDownload, GainerProcess  # Local import
 
 # Function to initialize ChromeDriver with proper options
 def get_chrome_driver():
@@ -21,13 +21,9 @@ def get_chrome_driver():
 
     # Create a Service object and initialize ChromeDriver with it
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
-    return driver
+    driver_instance = webdriver.Chrome(service=service, options=options)  # Renamed variable to avoid conflict
+    return driver_instance
 
-# Create the Chrome driver instance
-driver = get_chrome_driver()
-
-from .base import GainerDownload, GainerProcess
 
 class GainerDownloadWSJ(GainerDownload):
     def download(self, csv_path):
@@ -47,10 +43,11 @@ class GainerDownloadWSJ(GainerDownload):
         if html is None or "table" not in html.lower():
             print("Using Selenium to fetch WSJ data...")
             url = "https://www.wsj.com/market-data/stocks/us/movers"
-            driver.get(url)
+            driver_instance = get_chrome_driver()  # Use the renamed driver instance here
+            driver_instance.get(url)
             time.sleep(10)  # Wait for dynamic content to load
-            html = driver.page_source
-            driver.quit()
+            html = driver_instance.page_source
+            driver_instance.quit()
             with open("wsjgainers.html", "w", encoding="utf-8") as f:
                 f.write(html)
             print("WSJ HTML fetched and saved to wsjgainers.html")
