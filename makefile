@@ -8,7 +8,6 @@ update: env
 	. env/bin/activate; pip install --upgrade pip --break-system-packages
 	. env/bin/activate; pip install -r requirements.txt --break-system-packages
 
-
 ygainers.html:
 	sudo google-chrome-stable --headless --disable-gpu --dump-dom --no-sandbox --timeout=5000 'https://finance.yahoo.com/markets/stocks/gainers/?start=0&count=200' > ygainers.html
 
