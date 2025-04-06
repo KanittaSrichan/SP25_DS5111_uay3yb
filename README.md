@@ -6,34 +6,7 @@ Welcome to our data science project setup guide. This repository provides script
 
 [![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
-## Actions
-=======
 ## Learning Objectives
->>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
-
-- Automate VM setup to ensure quick and reproducible deployment.
-- Install essential tools like Google Chrome in headless mode for data scraping.
-- Establish a Python development environment using virtual environments and a Makefile.
-
-## Repository Structure
-
-<<<<<<< HEAD
-## Setting Up the Environment
-<<<<<<< HEAD
-=======
-## Learning Objectives
->>>>>>> LAB-03_csv_normalizer
-=======
->>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
-=======
-## Learning Objectives
->>>>>>> LAB-08_erd_diagram
 
 - Automate VM setup to ensure quick and reproducible deployment.
 - Install essential tools like Google Chrome in headless mode for data scraping.
@@ -50,17 +23,6 @@ Welcome to our data science project setup guide. This repository provides script
 |-- sample_data/  
 | |-- ygainers.csv
 
-=======
-/ |-- README.md  
-|-- init.sh  
-|-- Makefile  
-|-- requirements.txt  
-|-- scripts/  
-| |-- install_chrome.sh  
-|-- sample_data/  
-| |-- ygainers.csv
-
->>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 ## Setup Instructions
 
 ### Initial VM Setup
@@ -95,41 +57,13 @@ Welcome to our data science project setup guide. This repository provides script
      ```bash
      make update
      ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-4. **Testing the Setup:**
-   - You can run tests with:
-=======
-   - Verify the setup by running a test command to check Chrome's headless operation:
->>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
-     ```bash
-     make test_ygainers
-     ```
-=======
-=======
->>>>>>> LAB-08_erd_diagram
+### Testing the Setup
+
    - Verify the setup by running a test command to check Chrome's headless operation:
      ```bash
      make test_ygainers
      ```
-<<<<<<< HEAD
-=======
->>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
-=======
->>>>>>> LAB-08_erd_diagram
-
-3. **Verify Repository Structure:**
-   - Confirm the setup and organization of your project using the `tree` command, excluding the virtual environment directory:
-     ```bash
-     tree <your project-repo> -I env
-     ```
-<<<<<<< HEAD
->>>>>>> LAB-03_csv_normalizer
-=======
->>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 
 ## Troubleshooting
 
@@ -138,15 +72,6 @@ If you encounter issues during the setup, consider the following:
 - Verify Python and dependencies are installed correctly.
 - Check network settings if there are issues with package installations.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-```bash
-git add -A
-git commit -m "Update README with GitHub Actions badge"
-git push
-=======
-=======
->>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 ## Contributing
 
 To contribute to this repository, fork the project, make your changes, and submit a pull request. Ensure your contributions adhere to established coding standards and include proper documentation.
@@ -162,7 +87,3 @@ To contribute to this repository, fork the project, make your changes, and submi
 ## Contact
 
 For further assistance or inquiries, please contact uay3yb@virginia.edu
-<<<<<<< HEAD
->>>>>>> LAB-03_csv_normalizer
-=======
->>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
