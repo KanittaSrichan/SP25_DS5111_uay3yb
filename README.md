@@ -6,13 +6,7 @@ Welcome to our data science project setup guide. This repository provides script
 
 [![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
 
-## Actions
-
-You can track the status of your tests with the badge below:
-
-[![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations2.yml)
-
-## Setting Up the Environment
+## Learning Objectives
 
 - Automate VM setup to ensure quick and reproducible deployment.
 - Install essential tools like Google Chrome in headless mode for data scraping.
@@ -62,6 +56,10 @@ You can track the status of your tests with the badge below:
    - Use the Makefile to set up your Python virtual environment and install dependencies listed in `requirements.txt`:
      ```bash
      make update
+     ```
+   - Verify the setup by running a test command to check Chrome's headless operation:
+     ```bash
+     make test_ygainers
      ```
 
 3. **Verify Repository Structure:**
