@@ -9,6 +9,7 @@ Welcome to our data science project setup guide. This repository provides script
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
 ## Actions
@@ -30,6 +31,9 @@ Welcome to our data science project setup guide. This repository provides script
 >>>>>>> LAB-03_csv_normalizer
 =======
 >>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
+=======
+## Learning Objectives
+>>>>>>> LAB-08_erd_diagram
 
 - Automate VM setup to ensure quick and reproducible deployment.
 - Install essential tools like Google Chrome in headless mode for data scraping.
@@ -94,6 +98,7 @@ Welcome to our data science project setup guide. This repository provides script
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 4. **Testing the Setup:**
    - You can run tests with:
@@ -104,12 +109,17 @@ Welcome to our data science project setup guide. This repository provides script
      make test_ygainers
      ```
 =======
+=======
+>>>>>>> LAB-08_erd_diagram
    - Verify the setup by running a test command to check Chrome's headless operation:
      ```bash
      make test_ygainers
      ```
+<<<<<<< HEAD
 =======
 >>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
+=======
+>>>>>>> LAB-08_erd_diagram
 
 3. **Verify Repository Structure:**
    - Confirm the setup and organization of your project using the `tree` command, excluding the virtual environment directory:
