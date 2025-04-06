@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "DATA_SCIENCE"."UAY3YB_RAW"."NUMBERS";
+    -- dbt seed --
+    
+            insert into DATA_SCIENCE.UAY3YB_RAW.numbers (en, sp, fr, de) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+        
+
+;
+  

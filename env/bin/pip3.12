@@ -1,4 +1,4 @@
-#!/home/ubuntu/SP25_DS5111_uay3yb/Lab2/env/bin/python3
+#!/home/ubuntu/SP25_DS5111_uay3yb/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
