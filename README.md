@@ -8,14 +8,21 @@ Welcome to our data science project setup guide. This repository provides script
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
 ## Actions
+=======
+## Learning Objectives
+>>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 
-You can track the status of your tests with the badge below:
+- Automate VM setup to ensure quick and reproducible deployment.
+- Install essential tools like Google Chrome in headless mode for data scraping.
+- Establish a Python development environment using virtual environments and a Makefile.
 
-[![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations2.yml)
+## Repository Structure
 
+<<<<<<< HEAD
 ## Setting Up the Environment
 <<<<<<< HEAD
 =======
@@ -39,6 +46,17 @@ You can track the status of your tests with the badge below:
 |-- sample_data/  
 | |-- ygainers.csv
 
+=======
+/ |-- README.md  
+|-- init.sh  
+|-- Makefile  
+|-- requirements.txt  
+|-- scripts/  
+| |-- install_chrome.sh  
+|-- sample_data/  
+| |-- ygainers.csv
+
+>>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 ## Setup Instructions
 
 ### Initial VM Setup
@@ -75,9 +93,13 @@ You can track the status of your tests with the badge below:
      ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 4. **Testing the Setup:**
    - You can run tests with:
+=======
+   - Verify the setup by running a test command to check Chrome's headless operation:
+>>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
      ```bash
      make test_ygainers
      ```
@@ -94,7 +116,10 @@ You can track the status of your tests with the badge below:
      ```bash
      tree <your project-repo> -I env
      ```
+<<<<<<< HEAD
 >>>>>>> LAB-03_csv_normalizer
+=======
+>>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 
 ## Troubleshooting
 
@@ -104,11 +129,14 @@ If you encounter issues during the setup, consider the following:
 - Check network settings if there are issues with package installations.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```bash
 git add -A
 git commit -m "Update README with GitHub Actions badge"
 git push
 =======
+=======
+>>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
 ## Contributing
 
 To contribute to this repository, fork the project, make your changes, and submit a pull request. Ensure your contributions adhere to established coding standards and include proper documentation.
@@ -124,4 +152,7 @@ To contribute to this repository, fork the project, make your changes, and submi
 ## Contact
 
 For further assistance or inquiries, please contact uay3yb@virginia.edu
+<<<<<<< HEAD
 >>>>>>> LAB-03_csv_normalizer
+=======
+>>>>>>> 1bed2896a698b25e69613d94e2beab53774741df
