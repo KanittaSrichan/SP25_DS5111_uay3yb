@@ -4,8 +4,6 @@
 
 Welcome to our data science project setup guide. This repository provides scripts and instructions to automate the setup of a Virtual Machine (VM) for data science tasks, focusing on creating a reproducible environment that facilitates data collection using a headless Chrome browser and analysis using Python.
 
-[![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
-
 ## Learning Objectives
 
 - Automate VM setup to ensure quick and reproducible deployment.
