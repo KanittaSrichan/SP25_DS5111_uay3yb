@@ -7,6 +7,9 @@ Welcome to our data science project setup guide. This repository provides script
 [![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
 ## Actions
 
 You can track the status of your tests with the badge below:
@@ -14,9 +17,12 @@ You can track the status of your tests with the badge below:
 [![Feature Validation](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations.yml/badge.svg)](https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/workflows/validations2.yml)
 
 ## Setting Up the Environment
+<<<<<<< HEAD
 =======
 ## Learning Objectives
 >>>>>>> LAB-03_csv_normalizer
+=======
+>>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
 
 - Automate VM setup to ensure quick and reproducible deployment.
 - Install essential tools like Google Chrome in headless mode for data scraping.
@@ -68,6 +74,7 @@ You can track the status of your tests with the badge below:
      make update
      ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 4. **Testing the Setup:**
    - You can run tests with:
@@ -79,6 +86,8 @@ You can track the status of your tests with the badge below:
      ```bash
      make test_ygainers
      ```
+=======
+>>>>>>> eb333a7667a3452441161958dd0ff27cc94bc155
 
 3. **Verify Repository Structure:**
    - Confirm the setup and organization of your project using the `tree` command, excluding the virtual environment directory:

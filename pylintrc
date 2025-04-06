@@ -408,6 +408,9 @@ logging-format-style=old
 # function parameter format.
 logging-modules=logging
 
+[MASTER]
+init-hook='import sys; sys.path.append("path_to_selenium_if_needed")'
+
 
 [MESSAGES CONTROL]
 
@@ -438,7 +441,8 @@ disable=raw-checker-failed,
         deprecated-pragma,
         use-symbolic-message-instead,
         use-implicit-booleaness-not-comparison-to-string,
-        use-implicit-booleaness-not-comparison-to-zero
+        use-implicit-booleaness-not-comparison-to-zero,
+        C0103, C0114, C0115, C0116, R0903, E0401
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option

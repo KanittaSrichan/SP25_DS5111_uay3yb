@@ -1,0 +1,32 @@
+[0m01:11:31.788727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1b6c06e360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1b6caa7230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1b6c06e330>]}
+
+
+============================== 01:11:31.794027 | 9012bcfa-940e-46e2-91a1-635f41f10bfc ==============================
+[0m01:11:31.794027 [info ] [MainThread]: Running with dbt=1.9.3
+[0m01:11:31.794628 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/ubuntu/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init gainers', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:11:31.802555 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/home/ubuntu/.dbt')}
+[0m01:11:31.802976 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m01:11:31.804138 [debug] [MainThread]: Starter project path: /home/ubuntu/SP25_DS5111_uay3yb/env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m01:11:31.806165 [info ] [MainThread]: 
+Your new dbt project "gainers" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:11:31.807050 [info ] [MainThread]: Setting up your profile.
+[0m01:19:42.491693 [info ] [MainThread]: Profile gainers written to /home/ubuntu/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:19:42.495169 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 490.76694, "process_in_blocks": "37776", "process_kernel_time": 0.181576, "process_mem_max_rss": "150196", "process_out_blocks": "80", "process_user_time": 1.812157}
+[0m01:19:42.495600 [debug] [MainThread]: Command `dbt init` succeeded at 01:19:42.495509 after 490.77 seconds
+[0m01:19:42.495893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1b6bb92a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1b6c3ac260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1b647eb470>]}
+[0m01:19:42.496261 [debug] [MainThread]: Flushing usage events
+[0m01:19:42.515605 [debug] [MainThread]: An error was encountered while trying to flush usage events

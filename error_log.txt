@@ -1,0 +1,307 @@
+2025-03-26 09:31:03.848518 - An error occurred with wsj: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+
+2025-03-26 12:30:03.213890 - An error occurred with wsj: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+
+2025-03-26 14:41:10.516494 - An error occurred with wsj: Message: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 132.0.6834.159 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x634669eceab3 <unknown>
+#1 0x634669c423d8 <unknown>
+#2 0x634669c68b43 <unknown>
+#3 0x634669c64478 <unknown>
+#4 0x634669c607ca <unknown>
+#5 0x634669c9a497 <unknown>
+#6 0x634669c947e3 <unknown>
+#7 0x634669c6b163 <unknown>
+#8 0x634669c6c215 <unknown>
+#9 0x634669efa98e <unknown>
+#10 0x634669f0e052 <unknown>
+#11 0x634669f0f2ac <unknown>
+#12 0x634669efba64 <unknown>
+#13 0x634669f0f7da <unknown>
+#14 0x634669ef1fbb <unknown>
+#15 0x634669f292d8 <unknown>
+#16 0x634669f29458 <unknown>
+#17 0x634669f42f3d <unknown>
+#18 0x73c55369caa4 <unknown>
+#19 0x73c553729c3c <unknown>
+
+2025-03-26 14:42:57.489488 - An error occurred with wsj: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+
+2025-03-26 15:19:16.499134 - An error occurred with wsj: Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 132.0.6834.159 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5f0fc8eee133 <unknown>
+#1 0x5f0fc8c22966 <unknown>
+#2 0x5f0fc8c505ec <unknown>
+#3 0x5f0fc8c4b8da <unknown>
+#4 0x5f0fc8c4807b <unknown>
+#5 0x5f0fc8c879ad <unknown>
+#6 0x5f0fc8c8718f <unknown>
+#7 0x5f0fc8c7e9a3 <unknown>
+#8 0x5f0fc8c5346a <unknown>
+#9 0x5f0fc8c5455e <unknown>
+#10 0x5f0fc8eadcae <unknown>
+#11 0x5f0fc8eb18fe <unknown>
+#12 0x5f0fc8ebaf20 <unknown>
+#13 0x5f0fc8eb2923 <unknown>
+#14 0x5f0fc8e85c0e <unknown>
+#15 0x5f0fc8ed5b08 <unknown>
+#16 0x5f0fc8ed5c97 <unknown>
+#17 0x5f0fc8ee6113 <unknown>
+#18 0x747ae989caa4 <unknown>
+#19 0x747ae9929c3c <unknown>
+
+2025-03-26 15:25:14.768948 - An error occurred with wsj: Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 132.0.6834.159 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5578ab6ac133 <unknown>
+#1 0x5578ab3e0966 <unknown>
+#2 0x5578ab40e5ec <unknown>
+#3 0x5578ab4098da <unknown>
+#4 0x5578ab40607b <unknown>
+#5 0x5578ab4459ad <unknown>
+#6 0x5578ab44518f <unknown>
+#7 0x5578ab43c9a3 <unknown>
+#8 0x5578ab41146a <unknown>
+#9 0x5578ab41255e <unknown>
+#10 0x5578ab66bcae <unknown>
+#11 0x5578ab66f8fe <unknown>
+#12 0x5578ab678f20 <unknown>
+#13 0x5578ab670923 <unknown>
+#14 0x5578ab643c0e <unknown>
+#15 0x5578ab693b08 <unknown>
+#16 0x5578ab693c97 <unknown>
+#17 0x5578ab6a4113 <unknown>
+#18 0x754d33c9caa4 <unknown>
+#19 0x754d33d29c3c <unknown>
+
+2025-03-27 00:15:19.230429 - An error occurred with wsj: Message: unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5e82be4b653a <unknown>
+#1 0x5e82bdfb1f00 <unknown>
+#2 0x5e82bdf9a1b7 <unknown>
+#3 0x5e82bdf99ec2 <unknown>
+#4 0x5e82bdf97e56 <unknown>
+#5 0x5e82bdf9863f <unknown>
+#6 0x5e82bdfa8410 <unknown>
+#7 0x5e82bdfbf194 <unknown>
+#8 0x5e82bdfc509b <unknown>
+#9 0x5e82bdf98d47 <unknown>
+#10 0x5e82bdfbecf1 <unknown>
+#11 0x5e82be045338 <unknown>
+#12 0x5e82be026343 <unknown>
+#13 0x5e82bdff378a <unknown>
+#14 0x5e82bdff49de <unknown>
+#15 0x5e82be4802cb <unknown>
+#16 0x5e82be484242 <unknown>
+#17 0x5e82be46d7ac <unknown>
+#18 0x5e82be484df7 <unknown>
+#19 0x5e82be451b2f <unknown>
+#20 0x5e82be4a51a8 <unknown>
+#21 0x5e82be4a5370 <unknown>
+#22 0x5e82be4b53b6 <unknown>
+#23 0x75b2a809caa4 <unknown>
+#24 0x75b2a8129c3c <unknown>
+
+2025-03-27 00:16:32.032761 - An error occurred with wsj: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5c92a17d653a <unknown>
+#1 0x5c92a12d1f00 <unknown>
+#2 0x5c92a12b8bc5 <unknown>
+#3 0x5c92a12b8aa3 <unknown>
+#4 0x5c92a12d4272 <unknown>
+#5 0x5c92a136496f <unknown>
+#6 0x5c92a1346343 <unknown>
+#7 0x5c92a131378a <unknown>
+#8 0x5c92a13149de <unknown>
+#9 0x5c92a17a02cb <unknown>
+#10 0x5c92a17a4242 <unknown>
+#11 0x5c92a178d7ac <unknown>
+#12 0x5c92a17a4df7 <unknown>
+#13 0x5c92a1771b2f <unknown>
+#14 0x5c92a17c51a8 <unknown>
+#15 0x5c92a17c5370 <unknown>
+#16 0x5c92a17d53b6 <unknown>
+#17 0x74456de9caa4 <unknown>
+#18 0x74456df29c3c <unknown>
+
+2025-03-27 00:17:27.664213 - An error occurred with wsj: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x57453a04453a <unknown>
+#1 0x574539b3ff00 <unknown>
+#2 0x574539b15b6f <unknown>
+#3 0x574539bbc95d <unknown>
+#4 0x574539bd2945 <unknown>
+#5 0x574539bb4343 <unknown>
+#6 0x574539b8178a <unknown>
+#7 0x574539b829de <unknown>
+#8 0x57453a00e2cb <unknown>
+#9 0x57453a012242 <unknown>
+#10 0x574539ffb7ac <unknown>
+#11 0x57453a012df7 <unknown>
+#12 0x574539fdfb2f <unknown>
+#13 0x57453a0331a8 <unknown>
+#14 0x57453a033370 <unknown>
+#15 0x57453a0433b6 <unknown>
+#16 0x7d1bf9e9caa4 <unknown>
+#17 0x7d1bf9f29c3c <unknown>
+
+2025-03-27 00:18:16.300121 - An error occurred with yahoo: Can only use .str accessor with string values!
+2025-03-27 00:18:26.867368 - An error occurred with wsj: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x60ee8662553a <unknown>
+#1 0x60ee86120f00 <unknown>
+#2 0x60ee86107bc5 <unknown>
+#3 0x60ee86107aa3 <unknown>
+#4 0x60ee86123272 <unknown>
+#5 0x60ee861b396f <unknown>
+#6 0x60ee86195343 <unknown>
+#7 0x60ee8616278a <unknown>
+#8 0x60ee861639de <unknown>
+#9 0x60ee865ef2cb <unknown>
+#10 0x60ee865f3242 <unknown>
+#11 0x60ee865dc7ac <unknown>
+#12 0x60ee865f3df7 <unknown>
+#13 0x60ee865c0b2f <unknown>
+#14 0x60ee866141a8 <unknown>
+#15 0x60ee86614370 <unknown>
+#16 0x60ee866243b6 <unknown>
+#17 0x75406469caa4 <unknown>
+#18 0x754064729c3c <unknown>
+
+2025-03-27 00:19:21.527270 - An error occurred with wsj: Message: unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x62f96ad5253a <unknown>
+#1 0x62f96a84df00 <unknown>
+#2 0x62f96a8361b7 <unknown>
+#3 0x62f96a835ec2 <unknown>
+#4 0x62f96a833e56 <unknown>
+#5 0x62f96a83463f <unknown>
+#6 0x62f96a8446b0 <unknown>
+#7 0x62f96a85b194 <unknown>
+#8 0x62f96a86109b <unknown>
+#9 0x62f96a834d47 <unknown>
+#10 0x62f96a85acf1 <unknown>
+#11 0x62f96a8e1338 <unknown>
+#12 0x62f96a8c2343 <unknown>
+#13 0x62f96a88f78a <unknown>
+#14 0x62f96a8909de <unknown>
+#15 0x62f96ad1c2cb <unknown>
+#16 0x62f96ad20242 <unknown>
+#17 0x62f96ad097ac <unknown>
+#18 0x62f96ad20df7 <unknown>
+#19 0x62f96acedb2f <unknown>
+#20 0x62f96ad411a8 <unknown>
+#21 0x62f96ad41370 <unknown>
+#22 0x62f96ad513b6 <unknown>
+#23 0x78798ca9caa4 <unknown>
+#24 0x78798cb29c3c <unknown>
+
+2025-03-27 00:20:23.426013 - An error occurred with wsj: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5852fee0553a <unknown>
+#1 0x5852fe900d5d <unknown>
+#2 0x5852fe8e8e6f <unknown>
+#3 0x5852fe8e6e56 <unknown>
+#4 0x5852fe8e763f <unknown>
+#5 0x5852fe8f6f67 <unknown>
+#6 0x5852fe90e194 <unknown>
+#7 0x5852fe91409b <unknown>
+#8 0x5852fe8e7d47 <unknown>
+#9 0x5852fe90dcf1 <unknown>
+#10 0x5852fe994338 <unknown>
+#11 0x5852fe975343 <unknown>
+#12 0x5852fe94278a <unknown>
+#13 0x5852fe9439de <unknown>
+#14 0x5852fedcf2cb <unknown>
+#15 0x5852fedd3242 <unknown>
+#16 0x5852fedbc7ac <unknown>
+#17 0x5852fedd3df7 <unknown>
+#18 0x5852feda0b2f <unknown>
+#19 0x5852fedf41a8 <unknown>
+#20 0x5852fedf4370 <unknown>
+#21 0x5852fee043b6 <unknown>
+#22 0x72461389caa4 <unknown>
+#23 0x724613929c3c <unknown>
+
+2025-03-27 00:21:20.788822 - An error occurred with wsj: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5cffe3fb453a <unknown>
+#1 0x5cffe3aaff00 <unknown>
+#2 0x5cffe3a981b7 <unknown>
+#3 0x5cffe3a97ec2 <unknown>
+#4 0x5cffe3a95e56 <unknown>
+#5 0x5cffe3a9663f <unknown>
+#6 0x5cffe3ac287b <unknown>
+#7 0x5cffe3ab80b1 <unknown>
+#8 0x5cffe3ab7fa1 <unknown>
+#9 0x5cffe3aa6f06 <unknown>
+#10 0x5cffe3aa69e7 <unknown>
+#11 0x5cffe3abd194 <unknown>
+#12 0x5cffe3ac309b <unknown>
+#13 0x5cffe3a96d47 <unknown>
+#14 0x5cffe3abccf1 <unknown>
+#15 0x5cffe3b43338 <unknown>
+#16 0x5cffe3b24343 <unknown>
+#17 0x5cffe3af178a <unknown>
+#18 0x5cffe3af29de <unknown>
+#19 0x5cffe3f7e2cb <unknown>
+#20 0x5cffe3f82242 <unknown>
+#21 0x5cffe3f6b7ac <unknown>
+#22 0x5cffe3f82df7 <unknown>
+#23 0x5cffe3f4fb2f <unknown>
+#24 0x5cffe3fa31a8 <unknown>
+#25 0x5cffe3fa3370 <unknown>
+#26 0x5cffe3fb33b6 <unknown>
+#27 0x756aa809caa4 <unknown>
+#28 0x756aa8129c3c <unknown>
+
+2025-03-27 00:22:19.311182 - An error occurred with wsj: Message: unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=132.0.6834.159)
+Stacktrace:
+#0 0x5ae48d5df53a <unknown>
+#1 0x5ae48d0daf00 <unknown>
+#2 0x5ae48d0c31b7 <unknown>
+#3 0x5ae48d0c2ec2 <unknown>
+#4 0x5ae48d0c0e56 <unknown>
+#5 0x5ae48d0c163f <unknown>
+#6 0x5ae48d0d1410 <unknown>
+#7 0x5ae48d0e8194 <unknown>
+#8 0x5ae48d0ee09b <unknown>
+#9 0x5ae48d0c1d47 <unknown>
+#10 0x5ae48d0e7cf1 <unknown>
+#11 0x5ae48d16e338 <unknown>
+#12 0x5ae48d14f343 <unknown>
+#13 0x5ae48d11c78a <unknown>
+#14 0x5ae48d11d9de <unknown>
+#15 0x5ae48d5a92cb <unknown>
+#16 0x5ae48d5ad242 <unknown>
+#17 0x5ae48d5967ac <unknown>
+#18 0x5ae48d5addf7 <unknown>
+#19 0x5ae48d57ab2f <unknown>
+#20 0x5ae48d5ce1a8 <unknown>
+#21 0x5ae48d5ce370 <unknown>
+#22 0x5ae48d5de3b6 <unknown>
+#23 0x74c033e9caa4 <unknown>
+#24 0x74c033f29c3c <unknown>
+
+2025-03-27 00:37:05.033144 - An error occurred with wsj: HTTPConnectionPool(host='localhost', port=51855): Read timed out. (read timeout=120)
+2025-03-27 00:37:05.644720 - An error occurred with wsj: HTTPConnectionPool(host='localhost', port=52665): Read timed out. (read timeout=120)
+2025-03-27 02:01:34.736789 - An error occurred with wsj: GainerProcessWSJ.save_with_timestamp() missing 1 required positional argument: 'raw_file_dir'
