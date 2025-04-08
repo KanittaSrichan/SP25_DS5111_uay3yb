@@ -67,3 +67,5 @@ erDiagram
         float High_PE_Ratio
     }
 ```
+
+## While the data provides useful insights, additional data, such as candlestick charts, could offer more detailed information. Overall, the data helps understand stock performance and can guide investment decisions, but more advanced methods could improve the analysis further.
