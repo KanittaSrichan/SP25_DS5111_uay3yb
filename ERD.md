@@ -32,7 +32,6 @@ erDiagram
         float Change
         string Change_Percent
         string Volume
-        string Avg Vol (3M)
         string Market_Cap
         string PE_Ratio
         string Wk_Change_Percent
