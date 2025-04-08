@@ -64,7 +64,3 @@ erDiagram
         float Max_Volume
         float High_PE_Ratio
     }
-
-
-## Reason for This Design
-I designed the ERD this way because it creates a logical flow of data, transforming raw stock information into actionable insights. The RAW-DATA table captures all the raw stock information initially, which is then cleaned and transformed into the CLEANED-DATA table to ensure consistency and accuracy. Aggregating the data weekly in the WEEKLY-AGGREGATED table allows for easier trend analysis over time, smoothing out daily volatility. Finally, the ANALYSIS-TABLES provide detailed insights, such as identifying stocks with the highest volume or strongest performance, helping in making informed investment decisions. This structure ensures that stakeholders—whether investors, analysts, or risk managers—can efficiently access and use the data that’s most relevant to their needs.
