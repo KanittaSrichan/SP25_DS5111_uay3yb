@@ -18,6 +18,8 @@ The dataset consisted of daily records of stock prices, including open, midday, 
 2. **Analysis of Repeating Symbols**: SQL queries identified symbols that appeared frequently within the dataset.
 
 ## Entity Relationship Diagram (ERD)
+Reason for this design because it gives a flow of data from raw stock information to actionable insights. The RAW-DATA table captures all the detailed stock information initially, which is then cleaned and transformed into CLEANED-DATA for consistency and accuracy. Aggregating the data weekly in the WEEKLY-AGGREGATED table allows for easier trend analysis over time, smoothing out daily volatility. Finally, the ANALYSIS-TABLES provide detailed insights, such as identifying stocks with the highest volume or strongest performance, helping in making informed investment decisions. This structure ensures that stakeholders—whether investors, analysts, or risk managers—can efficiently access and use the data that’s most relevant to their needs.
+
 Below is the ERD that illustrates the flow and transformation of the data:
 
 ```mermaid
