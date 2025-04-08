@@ -68,4 +68,5 @@ erDiagram
     }
 ```
 
-## While the data provides useful insights, additional data, such as candlestick charts, could offer more detailed information. Overall, the data helps understand stock performance and can guide investment decisions, but more advanced methods could improve the analysis further.
+## Summary
+While the data provides useful insights, additional data, such as company news and long-term data, could offer more detailed information. Overall, the data helps understand stock performance and can guide investment decisions, but more advanced methods could improve the analysis further.
