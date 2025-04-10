@@ -20,7 +20,11 @@ wsjgainers.html:
 wsjgainers.csv: wsjgainers.html
 	python -c "import pandas as pd; raw = pd.read_html('wsjgainers.html'); raw[0].to_csv('wsjgainers.csv')"
 
-lint:
+lint:   # as mentioned in the comment for validation.yaml the make lint command is not working in github actions.
+        # so we can do one of two things....
+        # in this file, the makefile, we can do something like `. env/bin/activate; pylint bin/gainers/`   and the same for the pytest line
+        # OR
+        # in the validation.yaml add the `. env/bin/activate` in the line before you call `make lint` and that should get it to work
 	pylint bin/gainers/
 	pytest -vvx tests
 
