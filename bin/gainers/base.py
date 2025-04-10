@@ -1,7 +1,7 @@
 # bin/gainers/base.py
 
 from abc import ABC, abstractmethod
-
+# are these files getting put through pylint?  That would have asked for comments on the class etc... let me know if it is and I'm misremembering
 # Abstract class for downloading raw data
 class GainerDownload(ABC):
     def __init__(self):
