@@ -29,6 +29,6 @@ typing_extensions==4.12.2
 tzdata==2025.1
 webencodings==0.5.1
 selenium==4.8.0
-dbt-core
-dbt-snowflake
-webdriver-manager
+dbt-core==1.9.4
+dbt-snowflake==1.9.2
+webdriver-manager==4.0.2
