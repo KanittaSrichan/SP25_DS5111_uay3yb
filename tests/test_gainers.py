@@ -7,6 +7,7 @@ from bin.gainers.factory import GainerFactory
 
 def test_yahoo_normalize():
     # Create a dummy DataFrame similar to expected Yahoo CSV structure
+    # nice, some test data that is constant is a good thing
     data = {
         "Symbol": ["QBTS", "RGTI"],
         "Price": ["10.15 +3.24 (+46.89%)", "11.22 +2.47 (+28.23%)"],

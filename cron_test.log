@@ -1,3 +1,4 @@
+# I like that you are using logging!  Typically though we try to exclude the logs, maybe do a `git rm` and add `*.log` to the .gitignore?
 /home/ubuntu/SP25_DS5111_uay3yb/bin/gainers/yahoo.py:30: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
   df_list = pd.read_html(html)
  Downloading yahoo data...

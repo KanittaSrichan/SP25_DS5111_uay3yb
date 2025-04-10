@@ -29,6 +29,6 @@ typing_extensions==4.12.2
 tzdata==2025.1
 webencodings==0.5.1
 selenium==4.8.0
-dbt-core
+dbt-core  # good job on setting version for the packages.  We need to do that for these last three also...
 dbt-snowflake
 webdriver-manager
