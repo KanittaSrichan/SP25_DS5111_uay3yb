@@ -23,7 +23,8 @@ jobs:
           make update
       - name: Pylint check
         run: |
-          make lint
+          make lint  # this is failing in the github action -> https://github.com/KanittaSrichan/SP25_DS5111_uay3yb/actions/runs/14369351720/job/40289306202
+                     # it's not finding the pylint program, so maybe the makefile is not setting the virtual environment?
       - name: Test with pytest
         run: |
           make test
