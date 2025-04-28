@@ -56,6 +56,7 @@ erDiagram
 ```
 
 ## Key SQL Snippets
+When we implemented SQL, we omitted the CLEANED-DATA process from the ER Diagram since our data was already in a unified format and did not require cleaning.
 ```sql
 -- Raw tables
 CREATE OR REPLACE TABLE RAW_WSJ (...);
