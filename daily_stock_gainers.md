@@ -79,23 +79,32 @@ SELECT 13 AS Week_Number,
 FROM RAW_WSJ;
 ```
 
-## Findings
+## Findings  
 
 ### Wall Street Journal (WSJ)
-- **Total rows:** 2 100  
-- **Unique stocks:** 839  
-- **Repeated symbols:** 513  
-- **Avg price:** \$27.79 | **Avg change:** \$2.12 (+12.4 %)  
-- **Top repeaters:** ALMS, PHH, USAR, LGHL, XGN …  
-- **Max change:** \$178.32 (735 %)  
+
+| Metric               | Value                          |
+|----------------------|--------------------------------|
+| Total rows           | 2 100                          |
+| Unique stocks        | 839                            |
+| Repeated symbols     | 513                            |
+| Top 5 repeats        | ALMS, PHH, USAR, LGHL, XGN     |
+| Avg price            | \$27.79                        |
+| Avg daily change     | \$2.12 (+12.4 %)               |
+| Max price change     | \$178.32 (+735 %)              |
 
 ### Yahoo Finance
-- **Total rows:** 984  
-- **Unique stocks:** 438  
-- **Repeated symbols:** 213  
-- **Avg price:** \$94.75 | **Avg change:** \$4.20 (+5.26 %)  
-- **Top repeaters:** COOP, RKT, VIV, IONQ, AEO …  
-- **Max change:** \$415.52 (109 %)  
 
-## Summary
-WSJ gainers skew toward lower‑priced, highly‑volatile stocks, whereas Yahoo features higher‑priced, steadier gainers. Repeated‑symbol analysis reveals momentum candidates for further investigation. Integrating additional data (news, sentiment) would enhance predictive power.
+| Metric               | Value                          |
+|----------------------|--------------------------------|
+| Total rows           | 984                            |
+| Unique stocks        | 438                            |
+| Repeated symbols     | 213                            |
+| Top 5 repeats        | COOP, RKT, VIV, IONQ, AEO      |
+| Avg price            | \$94.75                        |
+| Avg daily change     | \$4.20 (+5.26 %)               |
+| Max price change     | \$415.52 (+109 %)              |
+
+### Summary
+Over the study week, WSJ’s daily gainer list highlighted mostly lower-priced, fast-moving stocks, whereas Yahoo’s list focused on higher-priced names with steadier moves. Repetition analysis uncovered 513 recurring symbols on WSJ (over half its unique tickers) and 213 on Yahoo, indicating strong momentum plays on both platforms. Average prices and percentage gains show that WSJ gainers delivered larger relative jumps, but Yahoo gainers represented greater absolute dollar moves. Together, these insights can guide traders toward the most active tickers and help non-financial stakeholders understand where the market’s attention is concentrated. Future refinements—such as layering in news sentiment, sector tags, and candlestick history—could improve signal quality and support more sophisticated trading or risk-management strategies.
+
