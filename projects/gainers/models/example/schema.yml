@@ -1,38 +1,66 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: raw_wsj
+    description: "Combined Wall Street Journal gainer rows for Spring‑Break week"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
+      - name: SYMBOL
+        description: "Ticker symbol"
+      - name: PRICE
+      - name: PRICE_CHANGE
+      - name: PRICE_PERCENT_CHANGE
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: raw_yahoo
+    description: "Combined Yahoo Finance gainer rows for Spring‑Break week"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
+      - name: SYMBOL
+      - name: PRICE
+      - name: PRICE_CHANGE
+      - name: PRICE_PERCENT_CHANGE
 
-  - name: french
-    description: "test french table"
+  - name: weekly_agg_wsj
+    description: "Weekly averages for WSJ gainers"
     columns:
-      - name: FR
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
+      - name: WEEK_NUMBER
+      - name: AVG_PRICE
+      - name: AVG_PRICE_CHANGE
+      - name: AVG_PRICE_CHANGE_PERCENT
 
-  - name: enfr
-    description: "ensure all values in en column are also in ende"
+  - name: weekly_agg_yahoo
+    description: "Weekly averages for Yahoo gainers"
     columns:
-      - name: EN
-        data_tests:
-          - relationships:
-              to: ref('ende')
-              field: EN
+      - name: WEEK_NUMBER
+      - name: AVG_PRICE
+      - name: AVG_PRICE_CHANGE
+      - name: AVG_PRICE_CHANGE_PERCENT
+
+  - name: final_summary_wsj
+    description: "Final WSJ summary ‑ unique counts and extremes"
+    columns:
+      - name: WEEK_NUMBER
+      - name: TOTAL_UNIQUE_STOCKS
+      - name: AVERAGE_WEEKLY_PRICE
+      - name: MAX_PRICE_CHANGE
+      - name: MAX_PRICE_CHANGE_PERCENT
+
+  - name: final_summary_yahoo
+    description: "Final Yahoo summary ‑ unique counts and extremes"
+    columns:
+      - name: WEEK_NUMBER
+      - name: TOTAL_UNIQUE_STOCKS
+      - name: AVERAGE_WEEKLY_PRICE
+      - name: MAX_PRICE_CHANGE
+      - name: MAX_PRICE_CHANGE_PERCENT
+
+  - name: repeated_symbols_wsj
+    description: "Stocks that appeared more than once in WSJ gainers list"
+    columns:
+      - name: SYMBOL
+      - name: APPEARANCE_COUNT
+
+  - name: repeated_symbols_yahoo
+    description: "Stocks that appeared more than once in Yahoo gainers list"
+    columns:
+      - name: SYMBOL
+      - name: APPEARANCE_COUNT
+

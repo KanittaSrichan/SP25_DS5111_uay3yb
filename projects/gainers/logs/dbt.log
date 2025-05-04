@@ -5430,3 +5430,957 @@ COMMIT
 [0m22:17:18.898772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78d7bbaf1490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78d7bc3b05f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78d7b9af69f0>]}
 [0m22:17:18.899062 [debug] [MainThread]: Flushing usage events
 [0m22:17:18.910804 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:34:22.243027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7531fe2fbaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7531ff0cda00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7531ffd8b050>]}
+
+
+============================== 01:34:22.248647 | ada312c5-c5a4-43cc-958f-761b3809f575 ==============================
+[0m01:34:22.248647 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:34:22.249170 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/logs', 'version_check': 'True', 'profiles_dir': '/home/ubuntu/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:34:22.261670 [info ] [MainThread]: dbt version: 1.9.4
+[0m01:34:22.262217 [info ] [MainThread]: python version: 3.12.3
+[0m01:34:22.262623 [info ] [MainThread]: python path: /home/ubuntu/SP25_DS5111_uay3yb/.venv/bin/python3
+[0m01:34:22.263090 [info ] [MainThread]: os info: Linux-6.8.0-1027-aws-x86_64-with-glibc2.39
+[0m01:34:22.530485 [info ] [MainThread]: Using profiles dir at /home/ubuntu/.dbt
+[0m01:34:22.531140 [info ] [MainThread]: Using profiles.yml file at /home/ubuntu/.dbt/profiles.yml
+[0m01:34:22.531556 [info ] [MainThread]: Using dbt_project.yml file at /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/dbt_project.yml
+[0m01:34:22.532254 [info ] [MainThread]: adapter type: snowflake
+[0m01:34:22.532728 [info ] [MainThread]: adapter version: 1.9.4
+[0m01:34:22.642897 [info ] [MainThread]: Configuration:
+[0m01:34:22.643498 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:34:22.643980 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:34:22.644399 [info ] [MainThread]: Required dependencies:
+[0m01:34:22.644850 [debug] [MainThread]: Executing "git --help"
+[0m01:34:22.679509 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:34:22.680010 [debug] [MainThread]: STDERR: "b''"
+[0m01:34:22.680262 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:34:22.680774 [info ] [MainThread]: Connection:
+[0m01:34:22.681784 [info ] [MainThread]:   account: rja95216
+[0m01:34:22.682133 [info ] [MainThread]:   user: uay3yb@virginia.edu
+[0m01:34:22.682554 [info ] [MainThread]:   database: DATA_SCIENCE
+[0m01:34:22.682981 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m01:34:22.683403 [info ] [MainThread]:   role: DS5111_DBT
+[0m01:34:22.683829 [info ] [MainThread]:   schema: UAY3YB_RAW
+[0m01:34:22.684135 [info ] [MainThread]:   authenticator: None
+[0m01:34:22.684774 [info ] [MainThread]:   oauth_client_id: None
+[0m01:34:22.685086 [info ] [MainThread]:   query_tag: None
+[0m01:34:22.685424 [info ] [MainThread]:   client_session_keep_alive: False
+[0m01:34:22.685824 [info ] [MainThread]:   host: None
+[0m01:34:22.686139 [info ] [MainThread]:   port: None
+[0m01:34:22.686583 [info ] [MainThread]:   proxy_host: None
+[0m01:34:22.686881 [info ] [MainThread]:   proxy_port: None
+[0m01:34:22.687302 [info ] [MainThread]:   protocol: None
+[0m01:34:22.687640 [info ] [MainThread]:   connect_retries: 1
+[0m01:34:22.688259 [info ] [MainThread]:   connect_timeout: None
+[0m01:34:22.688644 [info ] [MainThread]:   retry_on_database_errors: False
+[0m01:34:22.688958 [info ] [MainThread]:   retry_all: False
+[0m01:34:22.689397 [info ] [MainThread]:   insecure_mode: False
+[0m01:34:22.689849 [info ] [MainThread]:   reuse_connections: True
+[0m01:34:22.690463 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m01:34:22.810351 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m01:34:22.834653 [debug] [MainThread]: Using snowflake connection "debug"
+[0m01:34:22.835023 [debug] [MainThread]: On debug: select 1 as id
+[0m01:34:22.835251 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:34:24.044692 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.209 seconds
+[0m01:34:24.045623 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:34:24.046238 [info ] [MainThread]: [32mAll checks passed![0m
+[0m01:34:24.048963 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.8718609, "process_in_blocks": "2584", "process_kernel_time": 0.201516, "process_mem_max_rss": "132504", "process_out_blocks": "2640", "process_user_time": 2.261065}
+[0m01:34:24.049364 [debug] [MainThread]: Command `dbt debug` succeeded at 01:34:24.049273 after 1.87 seconds
+[0m01:34:24.049998 [debug] [MainThread]: Connection 'debug' was left open.
+[0m01:34:24.050233 [debug] [MainThread]: On debug: Close
+[0m01:34:24.256028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7531fdb57380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7531fd6f2a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7531fc14c350>]}
+[0m01:34:24.256871 [debug] [MainThread]: Flushing usage events
+[0m01:34:24.268623 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:34:35.203218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f19842600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f19862120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f199e2b10>]}
+
+
+============================== 01:34:35.206538 | 065afc99-03d5-4132-ae3b-9286056dabef ==============================
+[0m01:34:35.206538 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:34:35.207059 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/logs', 'version_check': 'True', 'profiles_dir': '/home/ubuntu/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:34:35.616121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f1759a750>]}
+[0m01:34:35.684519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f1759ade0>]}
+[0m01:34:35.685929 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m01:34:35.812535 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m01:34:36.011120 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 9 files added, 9 files changed.
+[0m01:34:36.011759 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/raw_yahoo.sql
+[0m01:34:36.012069 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/repeated_symbols_wsj.sql
+[0m01:34:36.013250 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/raw_wsj.sql
+[0m01:34:36.013533 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/repeated_symbols_yahoo.sql
+[0m01:34:36.013798 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/weekly_agg_wsj.sql
+[0m01:34:36.014041 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/weekly_agg_yahoo.sql
+[0m01:34:36.014272 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/final_summary_yahoo.sql
+[0m01:34:36.014486 [debug] [MainThread]: Partial parsing: added file: gainers://models/example/final_summary_wsj.sql
+[0m01:34:36.015105 [debug] [MainThread]: Partial parsing: added file: dbt_snowflake://macros/metadata/list_relations_without_caching.sql
+[0m01:34:36.015798 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/schema.yml
+[0m01:34:36.016376 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/relations/dynamic_table/replace.sql
+[0m01:34:36.016735 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/materializations/incremental.sql
+[0m01:34:36.017856 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/adapters.sql
+[0m01:34:36.018180 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/relations/dynamic_table/describe.sql
+[0m01:34:36.019009 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/utils/optional.sql
+[0m01:34:36.019252 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/materializations/table.sql
+[0m01:34:36.021155 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/relations/table/create.sql
+[0m01:34:36.021460 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/relations/dynamic_table/create.sql
+[0m01:34:36.794758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f17486930>]}
+[0m01:34:36.869791 [debug] [MainThread]: Wrote artifact WritableManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/manifest.json
+[0m01:34:36.872272 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/semantic_manifest.json
+[0m01:34:36.887863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f16ddb980>]}
+[0m01:34:36.888285 [info ] [MainThread]: Found 13 models, 42 seeds, 476 macros
+[0m01:34:36.888635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f17050aa0>]}
+[0m01:34:36.891961 [info ] [MainThread]: 
+[0m01:34:36.892396 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:34:36.892792 [info ] [MainThread]: 
+[0m01:34:36.893405 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:34:36.898492 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATA_SCIENCE'
+[0m01:34:36.940312 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE"
+[0m01:34:36.940702 [debug] [ThreadPool]: On list_DATA_SCIENCE: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE"} */
+show terse schemas in database DATA_SCIENCE
+    limit 10000
+[0m01:34:36.940976 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:34:37.877003 [debug] [ThreadPool]: SQL status: SUCCESS 67 in 0.936 seconds
+[0m01:34:37.884562 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DATA_SCIENCE, now list_DATA_SCIENCE_UAY3YB_RAW)
+[0m01:34:37.897440 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE_UAY3YB_RAW"
+[0m01:34:37.897781 [debug] [ThreadPool]: On list_DATA_SCIENCE_UAY3YB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE_UAY3YB_RAW"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m01:34:38.107337 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m01:34:38.111469 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE_UAY3YB_RAW"
+[0m01:34:38.112279 [debug] [ThreadPool]: On list_DATA_SCIENCE_UAY3YB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE_UAY3YB_RAW"} */
+show objects in DATA_SCIENCE.UAY3YB_RAW
+    limit 10000
+    
+;
+[0m01:34:38.566601 [debug] [ThreadPool]: SQL status: SUCCESS 51 in 0.454 seconds
+[0m01:34:38.570084 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE_UAY3YB_RAW"
+[0m01:34:38.570395 [debug] [ThreadPool]: On list_DATA_SCIENCE_UAY3YB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE_UAY3YB_RAW"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m01:34:38.733725 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.163 seconds
+[0m01:34:38.743855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f1613ebd0>]}
+[0m01:34:38.749550 [debug] [Thread-1 (]: Began running node model.gainers.ende
+[0m01:34:38.750067 [info ] [Thread-1 (]: 1 of 13 START sql table model UAY3YB_RAW.ende .................................. [RUN]
+[0m01:34:38.750445 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DATA_SCIENCE_UAY3YB_RAW, now model.gainers.ende)
+[0m01:34:38.750755 [debug] [Thread-1 (]: Began compiling node model.gainers.ende
+[0m01:34:38.758561 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.ende"
+[0m01:34:38.761923 [debug] [Thread-1 (]: Began executing node model.gainers.ende
+[0m01:34:38.797453 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.ende"
+[0m01:34:38.802383 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.ende"
+[0m01:34:38.802787 [debug] [Thread-1 (]: On model.gainers.ende: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.ende"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.ende
+    
+
+    
+    as (
+
+SELECT EN,DE 
+FROM DATA_SCIENCE.UAY3YB_RAW.NUMBERS
+    )
+;
+[0m01:34:40.384720 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.582 seconds
+[0m01:34:40.410026 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f1b0620c0>]}
+[0m01:34:40.411056 [info ] [Thread-1 (]: 1 of 13 OK created sql table model UAY3YB_RAW.ende ............................. [[32mSUCCESS 1[0m in 1.66s]
+[0m01:34:40.411581 [debug] [Thread-1 (]: Finished running node model.gainers.ende
+[0m01:34:40.412098 [debug] [Thread-1 (]: Began running node model.gainers.enfr
+[0m01:34:40.412509 [info ] [Thread-1 (]: 2 of 13 START sql table model UAY3YB_RAW.enfr .................................. [RUN]
+[0m01:34:40.413152 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.ende, now model.gainers.enfr)
+[0m01:34:40.413468 [debug] [Thread-1 (]: Began compiling node model.gainers.enfr
+[0m01:34:40.416063 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.enfr"
+[0m01:34:40.416558 [debug] [Thread-1 (]: Began executing node model.gainers.enfr
+[0m01:34:40.419883 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.enfr"
+[0m01:34:40.421044 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.enfr"
+[0m01:34:40.421352 [debug] [Thread-1 (]: On model.gainers.enfr: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.enfr"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.enfr
+    
+
+    
+    as (
+
+SELECT EN,FR
+FROM DATA_SCIENCE.UAY3YB_RAW.NUMBERS
+    )
+;
+[0m01:34:41.855871 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.434 seconds
+[0m01:34:41.858462 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f15f87fe0>]}
+[0m01:34:41.859065 [info ] [Thread-1 (]: 2 of 13 OK created sql table model UAY3YB_RAW.enfr ............................. [[32mSUCCESS 1[0m in 1.45s]
+[0m01:34:41.859544 [debug] [Thread-1 (]: Finished running node model.gainers.enfr
+[0m01:34:41.861298 [debug] [Thread-1 (]: Began running node model.gainers.french
+[0m01:34:41.862612 [info ] [Thread-1 (]: 3 of 13 START sql table model UAY3YB_RAW.french ................................ [RUN]
+[0m01:34:41.863181 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.enfr, now model.gainers.french)
+[0m01:34:41.863464 [debug] [Thread-1 (]: Began compiling node model.gainers.french
+[0m01:34:41.865880 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.french"
+[0m01:34:41.866807 [debug] [Thread-1 (]: Began executing node model.gainers.french
+[0m01:34:41.869352 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.french"
+[0m01:34:41.871742 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.french"
+[0m01:34:41.872074 [debug] [Thread-1 (]: On model.gainers.french: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.french"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.french
+    
+
+    
+    as (
+
+SELECT FR 
+FROM DATA_SCIENCE.UAY3YB_RAW.NUMBERS
+    )
+;
+[0m01:34:43.434145 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.562 seconds
+[0m01:34:43.436546 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f15f98500>]}
+[0m01:34:43.437555 [info ] [Thread-1 (]: 3 of 13 OK created sql table model UAY3YB_RAW.french ........................... [[32mSUCCESS 1[0m in 1.57s]
+[0m01:34:43.438087 [debug] [Thread-1 (]: Finished running node model.gainers.french
+[0m01:34:43.438552 [debug] [Thread-1 (]: Began running node model.gainers.my_first_dbt_model
+[0m01:34:43.439002 [info ] [Thread-1 (]: 4 of 13 START sql table model UAY3YB_RAW.my_first_dbt_model .................... [RUN]
+[0m01:34:43.439547 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.french, now model.gainers.my_first_dbt_model)
+[0m01:34:43.439876 [debug] [Thread-1 (]: Began compiling node model.gainers.my_first_dbt_model
+[0m01:34:43.442279 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.my_first_dbt_model"
+[0m01:34:43.443237 [debug] [Thread-1 (]: Began executing node model.gainers.my_first_dbt_model
+[0m01:34:43.445983 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.my_first_dbt_model"
+[0m01:34:43.446805 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.my_first_dbt_model"
+[0m01:34:43.447117 [debug] [Thread-1 (]: On model.gainers.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.my_first_dbt_model"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.my_first_dbt_model
+    
+
+    
+    as (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+;
+[0m01:34:44.461405 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.014 seconds
+[0m01:34:44.463411 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f15f582f0>]}
+[0m01:34:44.464039 [info ] [Thread-1 (]: 4 of 13 OK created sql table model UAY3YB_RAW.my_first_dbt_model ............... [[32mSUCCESS 1[0m in 1.02s]
+[0m01:34:44.464550 [debug] [Thread-1 (]: Finished running node model.gainers.my_first_dbt_model
+[0m01:34:44.465516 [debug] [Thread-1 (]: Began running node model.gainers.raw_wsj
+[0m01:34:44.466416 [info ] [Thread-1 (]: 5 of 13 START sql table model UAY3YB_RAW.raw_wsj ............................... [RUN]
+[0m01:34:44.467020 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.my_first_dbt_model, now model.gainers.raw_wsj)
+[0m01:34:44.467319 [debug] [Thread-1 (]: Began compiling node model.gainers.raw_wsj
+[0m01:34:44.470725 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.raw_wsj"
+[0m01:34:44.471193 [debug] [Thread-1 (]: Began executing node model.gainers.raw_wsj
+[0m01:34:44.474023 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.raw_wsj"
+[0m01:34:44.476960 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.raw_wsj"
+[0m01:34:44.477330 [debug] [Thread-1 (]: On model.gainers.raw_wsj: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.raw_wsj"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.raw_wsj
+    
+
+    
+    as (
+
+-- Combine all WSJ CSV loads into one raw table
+SELECT SYMBOL, PRICE, PRICE_CHANGE, PRICE_PERCENT_CHANGE
+FROM (
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_27_02_48
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_27_03_03
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_28_00_49
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_31_13_00
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_31_15_26
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_31_17_33
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_01_15_44
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_01_15_56
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_01_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_12_12
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_20_39
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_03_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_03_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_03_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_04_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_04_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_04_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_09_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_09_12_30
+);
+[0m01:34:44.616011 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc1dce-0808-41d2-0074-560300664076
+[0m01:34:44.616430 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 51 at position 1 unexpected ';'.
+[0m01:34:44.622813 [debug] [Thread-1 (]: Database Error in model raw_wsj (models/example/raw_wsj.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 51 at position 1 unexpected ';'.
+  compiled code at target/run/gainers/models/example/raw_wsj.sql
+[0m01:34:44.623771 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f17053f50>]}
+[0m01:34:44.624556 [error] [Thread-1 (]: 5 of 13 ERROR creating sql table model UAY3YB_RAW.raw_wsj ...................... [[31mERROR[0m in 0.16s]
+[0m01:34:44.625270 [debug] [Thread-1 (]: Finished running node model.gainers.raw_wsj
+[0m01:34:44.625619 [debug] [Thread-1 (]: Began running node model.gainers.raw_yahoo
+[0m01:34:44.626318 [debug] [Thread-4 (]: Marking all children of 'model.gainers.raw_wsj' to be skipped because of status 'error'.  Reason: Database Error in model raw_wsj (models/example/raw_wsj.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 51 at position 1 unexpected ';'.
+  compiled code at target/run/gainers/models/example/raw_wsj.sql.
+[0m01:34:44.626755 [info ] [Thread-1 (]: 6 of 13 START sql table model UAY3YB_RAW.raw_yahoo ............................. [RUN]
+[0m01:34:44.628447 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.raw_wsj, now model.gainers.raw_yahoo)
+[0m01:34:44.628761 [debug] [Thread-1 (]: Began compiling node model.gainers.raw_yahoo
+[0m01:34:44.631976 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.raw_yahoo"
+[0m01:34:44.632412 [debug] [Thread-1 (]: Began executing node model.gainers.raw_yahoo
+[0m01:34:44.635333 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.raw_yahoo"
+[0m01:34:44.637243 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.raw_yahoo"
+[0m01:34:44.638083 [debug] [Thread-1 (]: On model.gainers.raw_yahoo: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.raw_yahoo"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.raw_yahoo
+    
+
+    
+    as (
+
+SELECT SYMBOL, PRICE, PRICE_CHANGE, PRICE_PERCENT_CHANGE
+FROM (
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_27_01_58
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_28_00_49
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_31_13_00
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_31_15_26
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_31_17_33
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_12
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_18
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_50
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_52
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_02_12_11
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_02_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_02_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_03_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_03_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_03_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_04_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_04_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_04_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_09_09_30
+);
+[0m01:34:44.794985 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc1dce-0808-4321-0074-56030066a082
+[0m01:34:44.795396 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 48 at position 1 unexpected ';'.
+[0m01:34:44.797650 [debug] [Thread-1 (]: Database Error in model raw_yahoo (models/example/raw_yahoo.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 48 at position 1 unexpected ';'.
+  compiled code at target/run/gainers/models/example/raw_yahoo.sql
+[0m01:34:44.798129 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f15f97a10>]}
+[0m01:34:44.798694 [error] [Thread-1 (]: 6 of 13 ERROR creating sql table model UAY3YB_RAW.raw_yahoo .................... [[31mERROR[0m in 0.17s]
+[0m01:34:44.799730 [debug] [Thread-1 (]: Finished running node model.gainers.raw_yahoo
+[0m01:34:44.800062 [debug] [Thread-1 (]: Began running node model.gainers.my_second_dbt_model
+[0m01:34:44.801247 [debug] [Thread-4 (]: Marking all children of 'model.gainers.raw_yahoo' to be skipped because of status 'error'.  Reason: Database Error in model raw_yahoo (models/example/raw_yahoo.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 48 at position 1 unexpected ';'.
+  compiled code at target/run/gainers/models/example/raw_yahoo.sql.
+[0m01:34:44.800924 [info ] [Thread-1 (]: 7 of 13 START sql view model UAY3YB_RAW.my_second_dbt_model .................... [RUN]
+[0m01:34:44.801780 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.raw_yahoo, now model.gainers.my_second_dbt_model)
+[0m01:34:44.802084 [debug] [Thread-1 (]: Began compiling node model.gainers.my_second_dbt_model
+[0m01:34:44.805455 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.my_second_dbt_model"
+[0m01:34:44.806097 [debug] [Thread-1 (]: Began executing node model.gainers.my_second_dbt_model
+[0m01:34:44.830218 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.my_second_dbt_model"
+[0m01:34:44.831039 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.my_second_dbt_model"
+[0m01:34:44.831415 [debug] [Thread-1 (]: On model.gainers.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.my_second_dbt_model"} */
+create or replace   view DATA_SCIENCE.UAY3YB_RAW.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DATA_SCIENCE.UAY3YB_RAW.my_first_dbt_model
+where id = 1
+  );
+[0m01:34:45.136360 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.305 seconds
+[0m01:34:45.143591 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '065afc99-03d5-4132-ae3b-9286056dabef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f15f3c9e0>]}
+[0m01:34:45.144229 [info ] [Thread-1 (]: 7 of 13 OK created sql view model UAY3YB_RAW.my_second_dbt_model ............... [[32mSUCCESS 1[0m in 0.34s]
+[0m01:34:45.145263 [debug] [Thread-1 (]: Finished running node model.gainers.my_second_dbt_model
+[0m01:34:45.145930 [debug] [Thread-1 (]: Began running node model.gainers.final_summary_wsj
+[0m01:34:45.146250 [info ] [Thread-1 (]: 8 of 13 SKIP relation UAY3YB_RAW.final_summary_wsj ............................. [[33mSKIP[0m]
+[0m01:34:45.146801 [debug] [Thread-1 (]: Finished running node model.gainers.final_summary_wsj
+[0m01:34:45.147117 [debug] [Thread-1 (]: Began running node model.gainers.repeated_symbols_wsj
+[0m01:34:45.147451 [info ] [Thread-1 (]: 9 of 13 SKIP relation UAY3YB_RAW.repeated_symbols_wsj .......................... [[33mSKIP[0m]
+[0m01:34:45.147982 [debug] [Thread-1 (]: Finished running node model.gainers.repeated_symbols_wsj
+[0m01:34:45.148277 [debug] [Thread-1 (]: Began running node model.gainers.weekly_agg_wsj
+[0m01:34:45.148735 [info ] [Thread-1 (]: 10 of 13 SKIP relation UAY3YB_RAW.weekly_agg_wsj ............................... [[33mSKIP[0m]
+[0m01:34:45.149173 [debug] [Thread-1 (]: Finished running node model.gainers.weekly_agg_wsj
+[0m01:34:45.149465 [debug] [Thread-1 (]: Began running node model.gainers.final_summary_yahoo
+[0m01:34:45.149871 [info ] [Thread-1 (]: 11 of 13 SKIP relation UAY3YB_RAW.final_summary_yahoo .......................... [[33mSKIP[0m]
+[0m01:34:45.150328 [debug] [Thread-1 (]: Finished running node model.gainers.final_summary_yahoo
+[0m01:34:45.150619 [debug] [Thread-1 (]: Began running node model.gainers.repeated_symbols_yahoo
+[0m01:34:45.151005 [info ] [Thread-1 (]: 12 of 13 SKIP relation UAY3YB_RAW.repeated_symbols_yahoo ....................... [[33mSKIP[0m]
+[0m01:34:45.151308 [debug] [Thread-1 (]: Finished running node model.gainers.repeated_symbols_yahoo
+[0m01:34:45.151702 [debug] [Thread-1 (]: Began running node model.gainers.weekly_agg_yahoo
+[0m01:34:45.152317 [info ] [Thread-1 (]: 13 of 13 SKIP relation UAY3YB_RAW.weekly_agg_yahoo ............................. [[33mSKIP[0m]
+[0m01:34:45.152778 [debug] [Thread-1 (]: Finished running node model.gainers.weekly_agg_yahoo
+[0m01:34:45.153872 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:34:45.154137 [debug] [MainThread]: Connection 'model.gainers.my_second_dbt_model' was left open.
+[0m01:34:45.154369 [debug] [MainThread]: On model.gainers.my_second_dbt_model: Close
+[0m01:34:45.323570 [info ] [MainThread]: 
+[0m01:34:45.324168 [info ] [MainThread]: Finished running 12 table models, 1 view model in 0 hours 0 minutes and 8.43 seconds (8.43s).
+[0m01:34:45.326557 [debug] [MainThread]: Command end result
+[0m01:34:45.354162 [debug] [MainThread]: Wrote artifact WritableManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/manifest.json
+[0m01:34:45.355666 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/semantic_manifest.json
+[0m01:34:45.361560 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/run_results.json
+[0m01:34:45.361861 [info ] [MainThread]: 
+[0m01:34:45.362812 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m01:34:45.363660 [info ] [MainThread]: 
+[0m01:34:45.364266 [error] [MainThread]:   Database Error in model raw_wsj (models/example/raw_wsj.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 51 at position 1 unexpected ';'.
+  compiled code at target/run/gainers/models/example/raw_wsj.sql
+[0m01:34:45.364594 [info ] [MainThread]: 
+[0m01:34:45.365109 [error] [MainThread]:   Database Error in model raw_yahoo (models/example/raw_yahoo.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 48 at position 1 unexpected ';'.
+  compiled code at target/run/gainers/models/example/raw_yahoo.sql
+[0m01:34:45.365566 [info ] [MainThread]: 
+[0m01:34:45.366051 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=2 SKIP=6 TOTAL=13
+[0m01:34:45.367077 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 10.223646, "process_in_blocks": "3096", "process_kernel_time": 0.237608, "process_mem_max_rss": "142552", "process_out_blocks": "3824", "process_user_time": 3.397049}
+[0m01:34:45.367513 [debug] [MainThread]: Command `dbt run` failed at 01:34:45.367417 after 10.22 seconds
+[0m01:34:45.367866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f1abaff80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f19088d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e8f19cbdf70>]}
+[0m01:34:45.368168 [debug] [MainThread]: Flushing usage events
+[0m01:34:45.382937 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:39:02.089926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098b74c830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098dd9eed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098b74c380>]}
+
+
+============================== 01:39:02.093492 | 6645cbcf-d653-4255-96d7-33d60de569c3 ==============================
+[0m01:39:02.093492 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:39:02.094331 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/ubuntu/.dbt', 'log_path': '/home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:39:02.487858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098a159af0>]}
+[0m01:39:02.557331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989e95a90>]}
+[0m01:39:02.558142 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m01:39:02.685250 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m01:39:02.806590 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 8 files changed.
+[0m01:39:02.807253 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/weekly_agg_yahoo.sql
+[0m01:39:02.808829 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/repeated_symbols_wsj.sql
+[0m01:39:02.809216 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/raw_wsj.sql
+[0m01:39:02.809532 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/repeated_symbols_yahoo.sql
+[0m01:39:02.809852 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/final_summary_wsj.sql
+[0m01:39:02.810356 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/final_summary_yahoo.sql
+[0m01:39:02.810638 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/weekly_agg_wsj.sql
+[0m01:39:02.810934 [debug] [MainThread]: Partial parsing: updated file: gainers://models/example/raw_yahoo.sql
+[0m01:39:03.291880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098976e570>]}
+[0m01:39:03.366796 [debug] [MainThread]: Wrote artifact WritableManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/manifest.json
+[0m01:39:03.369164 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/semantic_manifest.json
+[0m01:39:03.385779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989ce76e0>]}
+[0m01:39:03.386655 [info ] [MainThread]: Found 13 models, 42 seeds, 476 macros
+[0m01:39:03.387176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989f8a090>]}
+[0m01:39:03.389490 [info ] [MainThread]: 
+[0m01:39:03.390077 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:39:03.390462 [info ] [MainThread]: 
+[0m01:39:03.391127 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:39:03.396290 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATA_SCIENCE'
+[0m01:39:03.435500 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE"
+[0m01:39:03.435930 [debug] [ThreadPool]: On list_DATA_SCIENCE: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE"} */
+show terse schemas in database DATA_SCIENCE
+    limit 10000
+[0m01:39:03.436172 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:39:04.148536 [debug] [ThreadPool]: SQL status: SUCCESS 67 in 0.712 seconds
+[0m01:39:04.156171 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DATA_SCIENCE, now list_DATA_SCIENCE_UAY3YB_RAW)
+[0m01:39:04.168614 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE_UAY3YB_RAW"
+[0m01:39:04.169028 [debug] [ThreadPool]: On list_DATA_SCIENCE_UAY3YB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE_UAY3YB_RAW"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m01:39:04.307582 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m01:39:04.312497 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE_UAY3YB_RAW"
+[0m01:39:04.312857 [debug] [ThreadPool]: On list_DATA_SCIENCE_UAY3YB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE_UAY3YB_RAW"} */
+show objects in DATA_SCIENCE.UAY3YB_RAW
+    limit 10000
+    
+;
+[0m01:39:04.613452 [debug] [ThreadPool]: SQL status: SUCCESS 55 in 0.300 seconds
+[0m01:39:04.617100 [debug] [ThreadPool]: Using snowflake connection "list_DATA_SCIENCE_UAY3YB_RAW"
+[0m01:39:04.617459 [debug] [ThreadPool]: On list_DATA_SCIENCE_UAY3YB_RAW: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "connection_name": "list_DATA_SCIENCE_UAY3YB_RAW"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m01:39:04.774214 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.156 seconds
+[0m01:39:04.784071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989ae8f50>]}
+[0m01:39:04.785963 [debug] [Thread-1 (]: Began running node model.gainers.ende
+[0m01:39:04.786916 [info ] [Thread-1 (]: 1 of 13 START sql table model UAY3YB_RAW.ende .................................. [RUN]
+[0m01:39:04.787309 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DATA_SCIENCE_UAY3YB_RAW, now model.gainers.ende)
+[0m01:39:04.788181 [debug] [Thread-1 (]: Began compiling node model.gainers.ende
+[0m01:39:04.797087 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.ende"
+[0m01:39:04.798605 [debug] [Thread-1 (]: Began executing node model.gainers.ende
+[0m01:39:04.836076 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.ende"
+[0m01:39:04.836937 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.ende"
+[0m01:39:04.837336 [debug] [Thread-1 (]: On model.gainers.ende: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.ende"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.ende
+    
+
+    
+    as (
+
+SELECT EN,DE 
+FROM DATA_SCIENCE.UAY3YB_RAW.NUMBERS
+    )
+;
+[0m01:39:05.512984 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.675 seconds
+[0m01:39:05.541376 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988b9f890>]}
+[0m01:39:05.542067 [info ] [Thread-1 (]: 1 of 13 OK created sql table model UAY3YB_RAW.ende ............................. [[32mSUCCESS 1[0m in 0.75s]
+[0m01:39:05.542815 [debug] [Thread-1 (]: Finished running node model.gainers.ende
+[0m01:39:05.543178 [debug] [Thread-1 (]: Began running node model.gainers.enfr
+[0m01:39:05.544006 [info ] [Thread-1 (]: 2 of 13 START sql table model UAY3YB_RAW.enfr .................................. [RUN]
+[0m01:39:05.544609 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.ende, now model.gainers.enfr)
+[0m01:39:05.544926 [debug] [Thread-1 (]: Began compiling node model.gainers.enfr
+[0m01:39:05.547777 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.enfr"
+[0m01:39:05.548271 [debug] [Thread-1 (]: Began executing node model.gainers.enfr
+[0m01:39:05.550812 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.enfr"
+[0m01:39:05.552410 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.enfr"
+[0m01:39:05.552762 [debug] [Thread-1 (]: On model.gainers.enfr: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.enfr"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.enfr
+    
+
+    
+    as (
+
+SELECT EN,FR
+FROM DATA_SCIENCE.UAY3YB_RAW.NUMBERS
+    )
+;
+[0m01:39:06.697080 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.144 seconds
+[0m01:39:06.700012 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988b971a0>]}
+[0m01:39:06.700578 [info ] [Thread-1 (]: 2 of 13 OK created sql table model UAY3YB_RAW.enfr ............................. [[32mSUCCESS 1[0m in 1.16s]
+[0m01:39:06.701088 [debug] [Thread-1 (]: Finished running node model.gainers.enfr
+[0m01:39:06.701525 [debug] [Thread-1 (]: Began running node model.gainers.french
+[0m01:39:06.702002 [info ] [Thread-1 (]: 3 of 13 START sql table model UAY3YB_RAW.french ................................ [RUN]
+[0m01:39:06.703211 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.enfr, now model.gainers.french)
+[0m01:39:06.703623 [debug] [Thread-1 (]: Began compiling node model.gainers.french
+[0m01:39:06.706759 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.french"
+[0m01:39:06.707296 [debug] [Thread-1 (]: Began executing node model.gainers.french
+[0m01:39:06.710125 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.french"
+[0m01:39:06.710800 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.french"
+[0m01:39:06.711136 [debug] [Thread-1 (]: On model.gainers.french: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.french"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.french
+    
+
+    
+    as (
+
+SELECT FR 
+FROM DATA_SCIENCE.UAY3YB_RAW.NUMBERS
+    )
+;
+[0m01:39:07.320594 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.609 seconds
+[0m01:39:07.323874 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988133020>]}
+[0m01:39:07.324485 [info ] [Thread-1 (]: 3 of 13 OK created sql table model UAY3YB_RAW.french ........................... [[32mSUCCESS 1[0m in 0.62s]
+[0m01:39:07.325203 [debug] [Thread-1 (]: Finished running node model.gainers.french
+[0m01:39:07.325942 [debug] [Thread-1 (]: Began running node model.gainers.my_first_dbt_model
+[0m01:39:07.326633 [info ] [Thread-1 (]: 4 of 13 START sql table model UAY3YB_RAW.my_first_dbt_model .................... [RUN]
+[0m01:39:07.327250 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.french, now model.gainers.my_first_dbt_model)
+[0m01:39:07.327527 [debug] [Thread-1 (]: Began compiling node model.gainers.my_first_dbt_model
+[0m01:39:07.329959 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.my_first_dbt_model"
+[0m01:39:07.331343 [debug] [Thread-1 (]: Began executing node model.gainers.my_first_dbt_model
+[0m01:39:07.333830 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.my_first_dbt_model"
+[0m01:39:07.334653 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.my_first_dbt_model"
+[0m01:39:07.334986 [debug] [Thread-1 (]: On model.gainers.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.my_first_dbt_model"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.my_first_dbt_model
+    
+
+    
+    as (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+;
+[0m01:39:07.946120 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.611 seconds
+[0m01:39:07.950029 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988149970>]}
+[0m01:39:07.950594 [info ] [Thread-1 (]: 4 of 13 OK created sql table model UAY3YB_RAW.my_first_dbt_model ............... [[32mSUCCESS 1[0m in 0.62s]
+[0m01:39:07.951108 [debug] [Thread-1 (]: Finished running node model.gainers.my_first_dbt_model
+[0m01:39:07.952512 [debug] [Thread-1 (]: Began running node model.gainers.raw_wsj
+[0m01:39:07.952993 [info ] [Thread-1 (]: 5 of 13 START sql table model UAY3YB_RAW.raw_wsj ............................... [RUN]
+[0m01:39:07.953863 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.my_first_dbt_model, now model.gainers.raw_wsj)
+[0m01:39:07.954221 [debug] [Thread-1 (]: Began compiling node model.gainers.raw_wsj
+[0m01:39:07.957144 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.raw_wsj"
+[0m01:39:07.957692 [debug] [Thread-1 (]: Began executing node model.gainers.raw_wsj
+[0m01:39:07.960690 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.raw_wsj"
+[0m01:39:07.963550 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.raw_wsj"
+[0m01:39:07.963950 [debug] [Thread-1 (]: On model.gainers.raw_wsj: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.raw_wsj"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.raw_wsj
+    
+
+    
+    as (
+
+-- Combine all WSJ CSV loads into one raw table
+SELECT SYMBOL, PRICE, PRICE_CHANGE, PRICE_PERCENT_CHANGE
+FROM (
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_27_02_48
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_27_03_03
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_28_00_49
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_31_13_00
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_31_15_26
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_03_31_17_33
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_01_15_44
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_01_15_56
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_01_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_12_12
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_02_20_39
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_03_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_03_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_03_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_04_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_04_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_04_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_09_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_WSJ_2025_04_09_12_30
+)
+    )
+;
+[0m01:39:12.030184 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.065 seconds
+[0m01:39:12.032335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989fd4860>]}
+[0m01:39:12.032902 [info ] [Thread-1 (]: 5 of 13 OK created sql table model UAY3YB_RAW.raw_wsj .......................... [[32mSUCCESS 1[0m in 4.08s]
+[0m01:39:12.033627 [debug] [Thread-1 (]: Finished running node model.gainers.raw_wsj
+[0m01:39:12.034125 [debug] [Thread-1 (]: Began running node model.gainers.raw_yahoo
+[0m01:39:12.034889 [info ] [Thread-1 (]: 6 of 13 START sql table model UAY3YB_RAW.raw_yahoo ............................. [RUN]
+[0m01:39:12.035383 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.raw_wsj, now model.gainers.raw_yahoo)
+[0m01:39:12.035782 [debug] [Thread-1 (]: Began compiling node model.gainers.raw_yahoo
+[0m01:39:12.038948 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.raw_yahoo"
+[0m01:39:12.039461 [debug] [Thread-1 (]: Began executing node model.gainers.raw_yahoo
+[0m01:39:12.042271 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.raw_yahoo"
+[0m01:39:12.044240 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.raw_yahoo"
+[0m01:39:12.044581 [debug] [Thread-1 (]: On model.gainers.raw_yahoo: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.raw_yahoo"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.raw_yahoo
+    
+
+    
+    as (
+
+SELECT SYMBOL, PRICE, PRICE_CHANGE, PRICE_PERCENT_CHANGE
+FROM (
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_27_01_58
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_28_00_49
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_31_13_00
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_31_15_26
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_03_31_17_33
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_12
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_18
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_50
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_15_52
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_01_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_02_12_11
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_02_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_02_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_03_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_03_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_03_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_04_09_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_04_12_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_04_16_30
+    UNION ALL
+    SELECT * FROM DATA_SCIENCE.UAY3YB_RAW.GAINERS_YAHOO_2025_04_09_09_30
+)
+    )
+;
+[0m01:39:15.703457 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 3.658 seconds
+[0m01:39:15.706403 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988a41010>]}
+[0m01:39:15.707033 [info ] [Thread-1 (]: 6 of 13 OK created sql table model UAY3YB_RAW.raw_yahoo ........................ [[32mSUCCESS 1[0m in 3.67s]
+[0m01:39:15.707524 [debug] [Thread-1 (]: Finished running node model.gainers.raw_yahoo
+[0m01:39:15.708467 [debug] [Thread-1 (]: Began running node model.gainers.my_second_dbt_model
+[0m01:39:15.708957 [info ] [Thread-1 (]: 7 of 13 START sql view model UAY3YB_RAW.my_second_dbt_model .................... [RUN]
+[0m01:39:15.709783 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.raw_yahoo, now model.gainers.my_second_dbt_model)
+[0m01:39:15.710111 [debug] [Thread-1 (]: Began compiling node model.gainers.my_second_dbt_model
+[0m01:39:15.713278 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.my_second_dbt_model"
+[0m01:39:15.713800 [debug] [Thread-1 (]: Began executing node model.gainers.my_second_dbt_model
+[0m01:39:15.737640 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.my_second_dbt_model"
+[0m01:39:15.738471 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.my_second_dbt_model"
+[0m01:39:15.738857 [debug] [Thread-1 (]: On model.gainers.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.my_second_dbt_model"} */
+create or replace   view DATA_SCIENCE.UAY3YB_RAW.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DATA_SCIENCE.UAY3YB_RAW.my_first_dbt_model
+where id = 1
+  );
+[0m01:39:15.985488 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.246 seconds
+[0m01:39:15.988513 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098816ff20>]}
+[0m01:39:15.989085 [info ] [Thread-1 (]: 7 of 13 OK created sql view model UAY3YB_RAW.my_second_dbt_model ............... [[32mSUCCESS 1[0m in 0.28s]
+[0m01:39:15.990147 [debug] [Thread-1 (]: Finished running node model.gainers.my_second_dbt_model
+[0m01:39:15.990480 [debug] [Thread-1 (]: Began running node model.gainers.final_summary_wsj
+[0m01:39:15.991015 [info ] [Thread-1 (]: 8 of 13 START sql table model UAY3YB_RAW.final_summary_wsj ..................... [RUN]
+[0m01:39:15.991374 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.my_second_dbt_model, now model.gainers.final_summary_wsj)
+[0m01:39:15.991752 [debug] [Thread-1 (]: Began compiling node model.gainers.final_summary_wsj
+[0m01:39:15.995554 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.final_summary_wsj"
+[0m01:39:15.996026 [debug] [Thread-1 (]: Began executing node model.gainers.final_summary_wsj
+[0m01:39:15.998273 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.final_summary_wsj"
+[0m01:39:15.999542 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.final_summary_wsj"
+[0m01:39:15.999887 [debug] [Thread-1 (]: On model.gainers.final_summary_wsj: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.final_summary_wsj"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.final_summary_wsj
+    
+
+    
+    as (
+
+SELECT
+    13                                   AS week_number,
+    COUNT(DISTINCT symbol)               AS total_unique_stocks,
+    AVG(price)                           AS average_weekly_price,
+    MAX(price_change)                    AS max_price_change,
+    MAX(price_percent_change)            AS max_price_change_percent
+FROM DATA_SCIENCE.UAY3YB_RAW.raw_wsj
+    )
+;
+[0m01:39:16.842863 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.843 seconds
+[0m01:39:16.844986 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988b1a2a0>]}
+[0m01:39:16.845523 [info ] [Thread-1 (]: 8 of 13 OK created sql table model UAY3YB_RAW.final_summary_wsj ................ [[32mSUCCESS 1[0m in 0.85s]
+[0m01:39:16.846546 [debug] [Thread-1 (]: Finished running node model.gainers.final_summary_wsj
+[0m01:39:16.847019 [debug] [Thread-1 (]: Began running node model.gainers.repeated_symbols_wsj
+[0m01:39:16.847458 [info ] [Thread-1 (]: 9 of 13 START sql table model UAY3YB_RAW.repeated_symbols_wsj .................. [RUN]
+[0m01:39:16.848044 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.final_summary_wsj, now model.gainers.repeated_symbols_wsj)
+[0m01:39:16.848339 [debug] [Thread-1 (]: Began compiling node model.gainers.repeated_symbols_wsj
+[0m01:39:16.850870 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.repeated_symbols_wsj"
+[0m01:39:16.852439 [debug] [Thread-1 (]: Began executing node model.gainers.repeated_symbols_wsj
+[0m01:39:16.856620 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.repeated_symbols_wsj"
+[0m01:39:16.857349 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.repeated_symbols_wsj"
+[0m01:39:16.857650 [debug] [Thread-1 (]: On model.gainers.repeated_symbols_wsj: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.repeated_symbols_wsj"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.repeated_symbols_wsj
+    
+
+    
+    as (
+
+SELECT
+    symbol,
+    COUNT(*) AS appearance_count
+FROM DATA_SCIENCE.UAY3YB_RAW.raw_wsj
+GROUP BY symbol
+HAVING COUNT(*) > 1
+ORDER BY appearance_count DESC
+    )
+;
+[0m01:39:17.644576 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.787 seconds
+[0m01:39:17.647192 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098813c740>]}
+[0m01:39:17.647795 [info ] [Thread-1 (]: 9 of 13 OK created sql table model UAY3YB_RAW.repeated_symbols_wsj ............. [[32mSUCCESS 1[0m in 0.80s]
+[0m01:39:17.648483 [debug] [Thread-1 (]: Finished running node model.gainers.repeated_symbols_wsj
+[0m01:39:17.648825 [debug] [Thread-1 (]: Began running node model.gainers.weekly_agg_wsj
+[0m01:39:17.649319 [info ] [Thread-1 (]: 10 of 13 START sql table model UAY3YB_RAW.weekly_agg_wsj ....................... [RUN]
+[0m01:39:17.649699 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.repeated_symbols_wsj, now model.gainers.weekly_agg_wsj)
+[0m01:39:17.649972 [debug] [Thread-1 (]: Began compiling node model.gainers.weekly_agg_wsj
+[0m01:39:17.653042 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.weekly_agg_wsj"
+[0m01:39:17.653505 [debug] [Thread-1 (]: Began executing node model.gainers.weekly_agg_wsj
+[0m01:39:17.657275 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.weekly_agg_wsj"
+[0m01:39:17.658528 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.weekly_agg_wsj"
+[0m01:39:17.658878 [debug] [Thread-1 (]: On model.gainers.weekly_agg_wsj: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.weekly_agg_wsj"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.weekly_agg_wsj
+    
+
+    
+    as (
+
+SELECT
+    13                                   AS week_number,   -- spring‑break week
+    AVG(price)                           AS avg_price,
+    AVG(price_change)                    AS avg_price_change,
+    AVG(price_percent_change)            AS avg_price_change_percent
+FROM DATA_SCIENCE.UAY3YB_RAW.raw_wsj
+    )
+;
+[0m01:39:18.300258 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.641 seconds
+[0m01:39:18.302311 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098813fa40>]}
+[0m01:39:18.303439 [info ] [Thread-1 (]: 10 of 13 OK created sql table model UAY3YB_RAW.weekly_agg_wsj .................. [[32mSUCCESS 1[0m in 0.65s]
+[0m01:39:18.304145 [debug] [Thread-1 (]: Finished running node model.gainers.weekly_agg_wsj
+[0m01:39:18.304590 [debug] [Thread-1 (]: Began running node model.gainers.final_summary_yahoo
+[0m01:39:18.305079 [info ] [Thread-1 (]: 11 of 13 START sql table model UAY3YB_RAW.final_summary_yahoo .................. [RUN]
+[0m01:39:18.305591 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.weekly_agg_wsj, now model.gainers.final_summary_yahoo)
+[0m01:39:18.305970 [debug] [Thread-1 (]: Began compiling node model.gainers.final_summary_yahoo
+[0m01:39:18.308562 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.final_summary_yahoo"
+[0m01:39:18.309054 [debug] [Thread-1 (]: Began executing node model.gainers.final_summary_yahoo
+[0m01:39:18.312177 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.final_summary_yahoo"
+[0m01:39:18.313657 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.final_summary_yahoo"
+[0m01:39:18.314014 [debug] [Thread-1 (]: On model.gainers.final_summary_yahoo: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.final_summary_yahoo"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.final_summary_yahoo
+    
+
+    
+    as (
+
+SELECT
+    13                                   AS week_number,
+    COUNT(DISTINCT symbol)               AS total_unique_stocks,
+    AVG(price)                           AS average_weekly_price,
+    MAX(price_change)                    AS max_price_change,
+    MAX(price_percent_change)            AS max_price_change_percent
+FROM DATA_SCIENCE.UAY3YB_RAW.raw_yahoo
+    )
+;
+[0m01:39:19.040961 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.727 seconds
+[0m01:39:19.043577 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098976d880>]}
+[0m01:39:19.044191 [info ] [Thread-1 (]: 11 of 13 OK created sql table model UAY3YB_RAW.final_summary_yahoo ............. [[32mSUCCESS 1[0m in 0.74s]
+[0m01:39:19.045222 [debug] [Thread-1 (]: Finished running node model.gainers.final_summary_yahoo
+[0m01:39:19.045780 [debug] [Thread-1 (]: Began running node model.gainers.repeated_symbols_yahoo
+[0m01:39:19.046160 [info ] [Thread-1 (]: 12 of 13 START sql table model UAY3YB_RAW.repeated_symbols_yahoo ............... [RUN]
+[0m01:39:19.046739 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.final_summary_yahoo, now model.gainers.repeated_symbols_yahoo)
+[0m01:39:19.047040 [debug] [Thread-1 (]: Began compiling node model.gainers.repeated_symbols_yahoo
+[0m01:39:19.050181 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.repeated_symbols_yahoo"
+[0m01:39:19.050650 [debug] [Thread-1 (]: Began executing node model.gainers.repeated_symbols_yahoo
+[0m01:39:19.053716 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.repeated_symbols_yahoo"
+[0m01:39:19.054456 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.repeated_symbols_yahoo"
+[0m01:39:19.054767 [debug] [Thread-1 (]: On model.gainers.repeated_symbols_yahoo: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.repeated_symbols_yahoo"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.repeated_symbols_yahoo
+    
+
+    
+    as (
+
+SELECT
+    symbol,
+    COUNT(*) AS appearance_count
+FROM DATA_SCIENCE.UAY3YB_RAW.raw_yahoo
+GROUP BY symbol
+HAVING COUNT(*) > 1
+ORDER BY appearance_count DESC
+    )
+;
+[0m01:39:19.744657 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.690 seconds
+[0m01:39:19.747314 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989ce7860>]}
+[0m01:39:19.747945 [info ] [Thread-1 (]: 12 of 13 OK created sql table model UAY3YB_RAW.repeated_symbols_yahoo .......... [[32mSUCCESS 1[0m in 0.70s]
+[0m01:39:19.748630 [debug] [Thread-1 (]: Finished running node model.gainers.repeated_symbols_yahoo
+[0m01:39:19.748988 [debug] [Thread-1 (]: Began running node model.gainers.weekly_agg_yahoo
+[0m01:39:19.749482 [info ] [Thread-1 (]: 13 of 13 START sql table model UAY3YB_RAW.weekly_agg_yahoo ..................... [RUN]
+[0m01:39:19.750366 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.gainers.repeated_symbols_yahoo, now model.gainers.weekly_agg_yahoo)
+[0m01:39:19.750729 [debug] [Thread-1 (]: Began compiling node model.gainers.weekly_agg_yahoo
+[0m01:39:19.753257 [debug] [Thread-1 (]: Writing injected SQL for node "model.gainers.weekly_agg_yahoo"
+[0m01:39:19.754197 [debug] [Thread-1 (]: Began executing node model.gainers.weekly_agg_yahoo
+[0m01:39:19.757388 [debug] [Thread-1 (]: Writing runtime sql for node "model.gainers.weekly_agg_yahoo"
+[0m01:39:19.758160 [debug] [Thread-1 (]: Using snowflake connection "model.gainers.weekly_agg_yahoo"
+[0m01:39:19.758478 [debug] [Thread-1 (]: On model.gainers.weekly_agg_yahoo: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "gainers", "target_name": "dev", "node_id": "model.gainers.weekly_agg_yahoo"} */
+create or replace transient table DATA_SCIENCE.UAY3YB_RAW.weekly_agg_yahoo
+    
+
+    
+    as (
+
+SELECT
+    13                                   AS week_number,
+    AVG(price)                           AS avg_price,
+    AVG(price_change)                    AS avg_price_change,
+    AVG(price_percent_change)            AS avg_price_change_percent
+FROM DATA_SCIENCE.UAY3YB_RAW.raw_yahoo
+    )
+;
+[0m01:39:20.537617 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.779 seconds
+[0m01:39:20.540226 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6645cbcf-d653-4255-96d7-33d60de569c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740988b96030>]}
+[0m01:39:20.540788 [info ] [Thread-1 (]: 13 of 13 OK created sql table model UAY3YB_RAW.weekly_agg_yahoo ................ [[32mSUCCESS 1[0m in 0.79s]
+[0m01:39:20.542159 [debug] [Thread-1 (]: Finished running node model.gainers.weekly_agg_yahoo
+[0m01:39:20.543304 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:39:20.543571 [debug] [MainThread]: Connection 'model.gainers.weekly_agg_yahoo' was left open.
+[0m01:39:20.543889 [debug] [MainThread]: On model.gainers.weekly_agg_yahoo: Close
+[0m01:39:20.722558 [info ] [MainThread]: 
+[0m01:39:20.723166 [info ] [MainThread]: Finished running 12 table models, 1 view model in 0 hours 0 minutes and 17.33 seconds (17.33s).
+[0m01:39:20.725779 [debug] [MainThread]: Command end result
+[0m01:39:20.754336 [debug] [MainThread]: Wrote artifact WritableManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/manifest.json
+[0m01:39:20.755894 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/semantic_manifest.json
+[0m01:39:20.761850 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/ubuntu/SP25_DS5111_uay3yb/projects/gainers/target/run_results.json
+[0m01:39:20.762289 [info ] [MainThread]: 
+[0m01:39:20.762778 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:39:20.763169 [info ] [MainThread]: 
+[0m01:39:20.763876 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 TOTAL=13
+[0m01:39:20.765088 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 18.737581, "process_in_blocks": "200", "process_kernel_time": 0.247186, "process_mem_max_rss": "141024", "process_out_blocks": "3960", "process_user_time": 3.214931}
+[0m01:39:20.765438 [debug] [MainThread]: Command `dbt run` succeeded at 01:39:20.765356 after 18.74 seconds
+[0m01:39:20.765754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098b63d790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74098f579220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740989b41f70>]}
+[0m01:39:20.766063 [debug] [MainThread]: Flushing usage events
+[0m01:39:20.778863 [debug] [MainThread]: An error was encountered while trying to flush usage events
